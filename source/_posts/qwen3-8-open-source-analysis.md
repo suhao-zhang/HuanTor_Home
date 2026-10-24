@@ -3,7 +3,7 @@ title: 千问Qwen3.8即将开源：洹拓科技解读2.4T参数大模型背后�
 date: 2026-10-24 09:30:00
 categories: [AI前沿]
 tags: [大模型, Qwen, 开源, AI应用]
-cover: /images/thumb-1.svg
+cover: https://images.unsplash.com/photo-1677442136019-21780ecad995?w=800
 excerpt: Qwen3.8预览版已上线，参数规模达2.4T，洹拓科技从AI模型研发服务商的视角，解读这轮大模型进化对中小企业数字化意味着什么。
 ---
 
@@ -13,7 +13,7 @@ excerpt: Qwen3.8预览版已上线，参数规模达2.4T，洹拓科技从AI模�
 
 更值得关注的是进化节奏——千问团队的模型迭代速度已经以"天"为单位计算。预览版已首发上线阿里Token Plan、Qoder及QoderWork平台，白天credits消耗限时1折，夜间更低，个人版及团队版低至每月35元起。
 
-![Qwen3.8发布](/images/thumb-1.svg)
+![Qwen3.8发布](https://images.unsplash.com/photo-1677442136019-21780ecad995?w=800)
 
 ## 二、洹拓视角：大模型开源对中小企业意味着什么
 

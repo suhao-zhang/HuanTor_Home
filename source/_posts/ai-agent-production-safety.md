@@ -3,7 +3,7 @@ title: AI Agent从Demo到生产环境：洹拓科技谈运行时安全与全链�
 date: 2026-10-24 10:15:00
 categories: [技术实践]
 tags: [AI Agent, 运行时安全, 可观测性, 云原生]
-cover: /images/thumb-2.svg
+cover: https://images.unsplash.com/photo-1684369175833-4b445ad6bfb5?w=800
 excerpt: AI Agent正在从实验室走向生产环境，但行为不可预测和执行能力带来全新安全挑战。洹拓科技结合阿里云ACS Agent Sandbox与LoongCollector方案，分享Agent生产化的工程经验。
 ---
 
@@ -18,7 +18,7 @@ excerpt: AI Agent正在从实验室走向生产环境，但行为不可预测和
 
 这两个特征带来了全新的挑战。洹拓科技在为新乡本地企业交付AI Agent项目时，对此有深刻体会。
 
-![AI Agent安全挑战](/images/thumb-2.svg)
+![AI Agent安全挑战](https://images.unsplash.com/photo-1684369175833-4b445ad6bfb5?w=800)
 
 ## 二、核心挑战一：运行时安全
 
@@ -34,7 +34,7 @@ Agent在运行时需要访问数据、调用工具、执行操作，如果没有
 
 Agent最大的威胁往往来自外部能力被滥用——异常外呼、SSRF/内网探测、敏感数据落盘或外传。
 
-![Agent运行时安全](/images/thumb-1.svg)
+![Agent运行时安全](https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=800)
 
 ## 三、核心挑战二：全链路可观测
 
@@ -44,7 +44,7 @@ Agent最大的威胁往往来自外部能力被滥用——异常外呼、SSRF/�
 2. **成本难以控制和归因**：Agent的成本主要来自LLM Token消耗和外部API调用，且波动巨大。不知道哪些用户、哪些任务、哪些模型在"烧钱"。
 3. **质量难以度量和优化**：Agent的输出质量受模型能力、Prompt设计、检索数据等多种因素影响，且会不断变化。
 
-![Agent可观测挑战](/images/thumb-3.svg)
+![Agent可观测挑战](https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800)
 
 ## 四、阿里云的解法：ACS Agent Sandbox + LoongCollector
 
@@ -63,7 +63,7 @@ Agent最大的威胁往往来自外部能力被滥用——异常外呼、SSRF/�
 - **端侧计算**：在数据源头完成预处理，降低传输与存储成本
 - **企业级可靠性**：At-Least-Once投递语义，本地磁盘缓存，自动重试
 
-![深度集成方案](/images/thumb-2.svg)
+![深度集成方案](https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=800)
 
 ## 五、洹拓科技的Agent交付实践
 
@@ -91,7 +91,7 @@ Agent最大的威胁往往来自外部能力被滥用——异常外呼、SSRF/�
 - 第二阶段：小范围上线，设置人工接管机制
 - 第三阶段：全量上线，建立自动化监控和告警
 
-![完整方案架构](/images/thumb-1.svg)
+![完整方案架构](https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800)
 
 ## 六、给企业的建议
 

@@ -3,7 +3,7 @@ title: 让大模型输出不再失控：洹拓科技的Pydantic结构化输出�
 date: 2026-10-24 14:30:00
 categories: [技术实践]
 tags: [LLM, Pydantic, 结构化输出, 工程化]
-cover: /images/thumb-3.svg
+cover: https://images.unsplash.com/photo-1555949963-aa79dcee981c?w=800
 excerpt: 大模型很聪明，但它的输出常常"不听话"——返回非标准JSON、编造不存在的字段、甚至直接输出一段散文。洹拓科技分享如何用Pydantic给LLM输出加上严格的工程化校验。
 ---
 
@@ -19,7 +19,7 @@ excerpt: 大模型很聪明，但它的输出常常"不听话"——返回非标
 
 这些问题在Demo阶段可以忽略，但在生产环境中是致命的。下游系统解析失败、数据入库出错、业务流程中断——每一个都是P0级事故。
 
-![LLM输出校验架构](/images/thumb-3.svg)
+![LLM输出校验架构](https://images.unsplash.com/photo-1555949963-aa79dcee981c?w=800)
 
 ## 二、为什么需要结构化输出校验
 
@@ -37,7 +37,7 @@ LLM的输出本质上是文本，但业务系统需要的是强类型数据。�
 
 某些字段有明确的取值范围。比如"性别"只能是"男"或"女"，"订单状态"只能是"待支付""已支付""已发货""已完成""已取消"中的一个。LLM可能返回"未知"或"其他"这类不在枚举中的值。
 
-![校验流程](/images/thumb-1.svg)
+![校验流程](https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=800)
 
 ## 三、Pydantic：Python生态的结构化校验利器
 
@@ -102,7 +102,7 @@ def extract_user_info(text: str) -> dict:
     return json.loads(raw)
 ```
 
-![Pydantic校验流程](/images/thumb-2.svg)
+![Pydantic校验流程](https://images.unsplash.com/photo-1518186285589-2f7649de83e0?w=800)
 
 ## 四、洹拓科技的工程化实践
 
@@ -145,7 +145,7 @@ def extract_with_retry(text: str) -> UserInfo:
 - **默认值填充**：对于非关键字段，使用默认值
 - **部分解析**：只使用校验通过的字段，丢弃有问题的字段
 
-![降级策略](/images/thumb-1.svg)
+![降级策略](https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?w=800)
 
 ## 五、常见陷阱与避坑指南
 
