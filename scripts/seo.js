@@ -101,11 +101,21 @@ hexo.extend.filter.register('after_render:html', function (str, data) {
       '<meta property="og:type" content="article">');
   }
 
-  // 3) 分享图：优先用文章封面里的位图，否则用标准分享图
+  // 3) 分享图：文章位图封面优先；主题的兜底值会拿 logo 当 og:image（624x180 且透明底，
+  //     在微信/微博/X 的卡片里很难看），这种一律换成 1200x630 的标准分享图。
+  //     主题给的可能是 /images/x.png、../images/x.png 或 images/x.png，
+  //     先按当前页面位置解析成站点根路径，再拼绝对地址。
+  const path = require('path').posix;
+  const routeRel = routePath.replace(/index\.html$/, '');      // 与 post.path 一致（无前导斜杠）
+  const routeDir = '/' + routeRel;                              // 与 post.path 比较用
   const coverMatch = out.match(/<meta property="og:image" content="([^"]*)">/);
   let cover = coverMatch ? coverMatch[1] : '';
-  if (!/\.(png|jpe?g|webp)$/i.test(cover)) cover = prefix + 'images/og-cover.png';
-  const coverFinal = absUrl(origin, cover);
+  if (!/\.(png|jpe?g|webp)$/i.test(cover) || /(^|\/)images\/logo/.test(cover)) {
+    cover = prefix + 'images/og-cover.png';
+  }
+  const coverFinal = /^(https?:)?\/\//i.test(cover)
+    ? cover.replace(/^(https?:)?\/\//, 'https://')
+    : absUrl(origin, path.resolve(routeDir, cover));
   if (coverMatch) {
     out = out.replace(/<meta property="og:image" content="[^"]*">/,
       '<meta property="og:image" content="' + coverFinal + '">');
@@ -136,7 +146,7 @@ hexo.extend.filter.register('after_render:html', function (str, data) {
   }
 
   if (isPost) {
-    const post = findPost(hexo, canonical.replace(origin, ''));
+    const post = findPost(hexo, routeRel);
     if (post) {
       const title = (post.title || '').trim();
       const desc = (post.description || post.excerpt || hexo.config.description || '')
@@ -155,7 +165,7 @@ hexo.extend.filter.register('after_render:html', function (str, data) {
   if (!isHome) {
     const crumbs = [{ '@type': 'ListItem', position: 1, name: '首页', item: origin + '/' }];
     if (isPost) {
-      const post = findPost(hexo, canonical.replace(origin, ''));
+      const post = findPost(hexo, routeRel);
       crumbs.push({ '@type': 'ListItem', position: 2, name: '技术与行业动态', item: origin + '/news/' });
       if (post && post.title) {
         crumbs.push({ '@type': 'ListItem', position: 3, name: post.title.trim(), item: canonical });

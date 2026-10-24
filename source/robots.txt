@@ -35,4 +35,3 @@ User-agent: Baiduspider-render
 Allow: /
 
 Sitemap: https://www.huant.ltd/sitemap.xml
-Sitemap: https://www.huant.ltd/atom.xml
