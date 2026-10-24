@@ -208,3 +208,4 @@ seo:
 analytics:
   google: ""
   cloudflare: ""
+  vercel_speed_insights: true  # Enable Vercel Speed Insights (works when deployed to Vercel)
