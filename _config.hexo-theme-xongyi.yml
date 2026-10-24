@@ -203,8 +203,17 @@ seo:
   jsonld: true
 
 # ------------------------------------------------------------
-# 统计（有站点分析再填 ID）
+# 统计（填了 ID 才会注入，留空 = 产出里不带任何第三方脚本）
+#   umami   ：Umami Cloud 后台 Settings → Website → 复制 Website Id（一串 UUID）
+#             看板支持手机浏览器，还能开公开分享链接免登录查看
+#   clarity ：Microsoft Clarity 后台 Settings → Add project → Project ID（如 m7a9b2x1k3）
+#             负责热图与会话录屏，回答"访客在页面上到底做了什么"
+#   google / cloudflare 是主题自带的槽位，境内 GA4 看板打不开，一般用不上
+#   Vercel Web Analytics 已在平台侧开启，由 scripts/vercel-analytics.js 注入，不在这填
 # ------------------------------------------------------------
 analytics:
   google: ""
   cloudflare: ""
+  umami: ""
+  umami_server: "https://cloud.umami.is"   # 注册时选了欧洲区就改成 https://eu.umami.is
+  clarity: ""

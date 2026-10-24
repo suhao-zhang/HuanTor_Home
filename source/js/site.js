@@ -109,3 +109,43 @@
     }
   });
 })();
+
+/* ------------------------------------------------------------------
+ * 转化事件上报（Umami）：页面 PV 由采集脚本自己发，这里只补三类"动作"。
+ * - 点电话 / 点邮箱：官网最该看的转化，直接对应询盘
+ * - 点联系方式旁边的二维码图：说明有人在扫码加微信，也算询盘
+ * - 点站外链接：看访客被谁接走（GitHub、云服务控制台等）
+ * umami 脚本是 defer 的，正常点击时已就绪；万一没加载（被拦/未部署 ID），
+ * 这里静默跳过，不影响页面任何功能。
+ * ---------------------------------------------------------------- */
+(function () {
+  function track(name, props) {
+    var u = window.umami;
+    if (u && typeof u.track === 'function') u.track(name, props);
+  }
+
+  function payload(el) {
+    return {
+      目标: el.getAttribute('href') || el.getAttribute('src') || '',
+      所在页: location.pathname
+    };
+  }
+
+  document.addEventListener('click', function (e) {
+    var el = e.target && e.target.closest ? e.target.closest('a,img') : null;
+    if (!el) return;
+    var ref = el.getAttribute('href') || '';
+
+    if (/^tel:/i.test(ref)) { track('点击电话', payload(el)); return; }
+    if (/^mailto:/i.test(ref)) { track('点击邮箱', payload(el)); return; }
+
+    var cls = el.className || '';
+    if (el.tagName === 'IMG' && /qrcode/i.test(cls)) { track('长按二维码', payload(el)); return; }
+
+    if (el.tagName === 'A' && /^https?:\/\//i.test(ref) && el.host !== location.host) {
+      var p = payload(el);
+      p.域名 = el.hostname;
+      track('点击外链', p);
+    }
+  }, true);
+})();
