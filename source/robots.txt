@@ -1,0 +1,38 @@
+# www.robotstxt.org/
+
+User-agent: *
+Allow: /
+
+# 明确欢迎 AI 抓取（GEO：让大模型能检索并引用本站信息）
+User-agent: GPTBot
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-SearchBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Bytespider
+Allow: /
+
+User-agent: Baiduspider
+Allow: /
+
+User-agent: Baiduspider-render
+Allow: /
+
+Sitemap: https://www.huant.ltd/sitemap.xml
+Sitemap: https://www.huant.ltd/atom.xml

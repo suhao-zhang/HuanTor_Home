@@ -106,3 +106,25 @@ theme: hexo-theme-xongyi
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
   type: ''
+
+# SEO —— 网站地图与订阅源
+# 由 hexo-generator-sitemap / hexo-generator-feed 生成
+sitemap:
+  path: sitemap.xml
+  rel: false
+  tags: true
+  categories: true
+  sort_maps: true
+  sort_field: date
+  sort_order: -1
+
+feed:
+  enable: true
+  type: atom
+  path: atom.xml
+  limit: 20
+  content: true
+  content_limit: 1400
+  content_limit_delim: ' '
+  order_by: -date
+  icon: images/favicon.png
