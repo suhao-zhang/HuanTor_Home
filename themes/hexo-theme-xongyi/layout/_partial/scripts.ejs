@@ -16,3 +16,5 @@ var analytics = theme.analytics || {};
 <script defer src='https://static.cloudflareinsights.com/beacon.min.js'
   data-cf-beacon='{"token": "<%= analytics.cloudflare %>"}'></script>
 <% } %>
+<!-- Vercel Speed Insights -->
+<script src="<%- url_for('js/speed-insights.js') %>" defer></script>
