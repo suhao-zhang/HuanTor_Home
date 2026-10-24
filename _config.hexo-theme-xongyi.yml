@@ -207,3 +207,4 @@ seo:
 analytics:
   google: ""
   cloudflare: ""
+  vercel: true    # Vercel Web Analytics
