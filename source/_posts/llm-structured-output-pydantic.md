@@ -4,7 +4,7 @@ date: 2026-09-23 13:40:00
 updated: 2026-09-23 13:40:00
 categories: [技术实践]
 tags: [LLM, Pydantic, 结构化输出, 工程化]
-cover: https://images.unsplash.com/photo-1555949963-aa79dcee981c?w=800
+cover: /images/posts/llm-structured-output-pydantic.png
 excerpt: 大模型很聪明，但它的输出常常"不听话"——返回非标准JSON、编造不存在的字段、甚至直接输出一段散文。洹拓科技分享如何用Pydantic给LLM输出加上严格的工程化校验。
 ---
 

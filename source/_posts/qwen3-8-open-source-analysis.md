@@ -4,7 +4,7 @@ date: 2026-08-31 17:56:00
 updated: 2026-08-31 17:56:00
 categories: [AI前沿]
 tags: [大模型, Qwen, 开源, AI应用]
-cover: https://images.unsplash.com/photo-1677442136019-21780ecad995?w=800
+cover: /images/posts/qwen3-8-open-source-analysis.png
 excerpt: Qwen3.8预览版已上线，参数规模达2.4T，洹拓科技从AI模型研发服务商的视角，解读这轮大模型进化对中小企业数字化意味着什么。
 ---
 

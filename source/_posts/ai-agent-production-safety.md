@@ -4,7 +4,7 @@ date: 2026-09-03 13:31:00
 updated: 2026-09-03 13:31:00
 categories: [技术实践]
 tags: [AI Agent, 运行时安全, 可观测性, 云原生]
-cover: https://images.unsplash.com/photo-1684369175833-4b445ad6bfb5?w=800
+cover: /images/posts/ai-agent-production-safety.png
 excerpt: AI Agent正在从实验室走向生产环境，但行为不可预测和执行能力带来全新安全挑战。洹拓科技结合阿里云ACS Agent Sandbox与LoongCollector方案，分享Agent生产化的工程经验。
 ---
 

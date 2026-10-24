@@ -4,7 +4,7 @@ date: 2026-09-12 15:48:00
 updated: 2026-09-12 15:48:00
 categories: [技术实践]
 tags: [数字员工, 自动化, 任务调度, 幂等性, 运维]
-cover: https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=800
+cover: /images/posts/digital-employee-task-interruption.png
 excerpt: 把重复劳动交给数字员工之后，工程上绕不开一个问题：任务跑到一半中断了怎么办？洹拓科技分享一套实操框架——先做中断分型，再谈可观测，最后谈恢复。
 ---
 

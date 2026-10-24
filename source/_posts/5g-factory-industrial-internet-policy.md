@@ -4,7 +4,7 @@ date: 2026-09-27 09:15:00
 updated: 2026-09-27 09:15:00
 categories: [行业动态]
 tags: [5G, 工业互联网, 数字化转型, 智能制造, 政策]
-cover: https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=800
+cover: /images/posts/5g-factory-industrial-internet-policy.png
 excerpt: 工信部近日发布2026年5G工厂名录遴选通知，并推进工业互联网一体化进园区"百城千园行"活动。洹拓科技从本地软件服务商的视角，解读这些政策对新乡制造业数字化的意义。
 ---
 
