@@ -10,10 +10,11 @@ preset: enterprise          # enterprise 商务蓝 / government 政务红 / educ
 # 品牌
 # ------------------------------------------------------------
 brand:
-  name: "新乡洹拓科技"
+  name: "新乡洹拓科技"          # logo 图里已含"洹拓科技"字样，这段文字由 site.css 视觉隐藏，
+                                # 仍保留给 alt / aria-label / SEO 用
   slogan: "AI 大模型研发 · 工业智能 · SaaS 与云服务"
-  logo: ""                  # 主题自带 logo.svg 里写着 "Xongyi"，先只显示文字；做好自己的 logo 放到 source/images/ 后填 /images/logo-huantor.svg
-  favicon: "/images/favicon.svg"
+  logo: "/images/logo-light.png"   # 亮色版；暗色模式下 site.js 自动换成 logo-dark.png
+  favicon: "/images/favicon.png"   # 从 logo 图形部分裁出来的 128x128 图标
 
 # ------------------------------------------------------------
 # 导航

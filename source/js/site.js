@@ -1,0 +1,111 @@
+/* 站点自定义交互：交错淡入 / 数字滚动 / 阅读进度条
+   主题自带的 main.js 只负责 .reveal，这里补主题没有的部分。
+   尊重 prefers-reduced-motion：用户要求减少动效时全部直接呈现。 */
+(function () {
+  'use strict';
+  var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  function ready(fn) {
+    if (document.readyState !== 'loading') fn();
+    else document.addEventListener('DOMContentLoaded', fn);
+  }
+
+  ready(function () {
+    /* 1) 交错淡入容器：先加 ht-anim 才会启用隐藏样式，
+          JS 没执行时页面内容照常完整显示 */
+    var groups = Array.prototype.slice.call(document.querySelectorAll('.ht-stagger'));
+    if (groups.length) {
+      if (reduce || !('IntersectionObserver' in window)) {
+        /* 用户要求减少动效 / 老浏览器：不做动画，直接呈现 */
+      } else {
+        groups.forEach(function (g) { g.classList.add('ht-anim'); });
+        var io = new IntersectionObserver(function (entries) {
+          entries.forEach(function (e) {
+            if (e.isIntersecting) { e.target.classList.add('ht-in'); io.unobserve(e.target); }
+          });
+        }, { rootMargin: '0px 0px -12% 0px', threshold: 0.15 });
+        groups.forEach(function (g) { io.observe(g); });
+      }
+    }
+
+    /* 2) 数字滚动 */
+    var nums = Array.prototype.slice.call(document.querySelectorAll('[data-count]'));
+    function run(el) {
+      var target = parseFloat(el.getAttribute('data-count'));
+      var decimals = parseInt(el.getAttribute('data-decimals') || '0', 10);
+      if (isNaN(target)) return;
+      var final = target.toFixed(decimals);
+      /* 先把终值写进去：动画没跑起来（rAF 被挂起、后台标签页）也不会停在 0 */
+      el.textContent = final;
+      if (reduce || !window.requestAnimationFrame) return;
+      var dur = 1100, t0 = null;
+      function frame(ts) {
+        if (t0 === null) t0 = ts;
+        var p = Math.min((ts - t0) / dur, 1);
+        var eased = 1 - Math.pow(1 - p, 3);
+        el.textContent = (target * eased).toFixed(decimals);
+        if (p < 1) requestAnimationFrame(frame);
+        else el.textContent = final;
+      }
+      requestAnimationFrame(frame);
+      /* 兜底：动画异常也在规定时长后落到终值 */
+      setTimeout(function () { el.textContent = final; }, dur + 250);
+    }
+    if (nums.length) {
+      if (!('IntersectionObserver' in window)) {
+        nums.forEach(run);
+      } else {
+        var io2 = new IntersectionObserver(function (entries) {
+          entries.forEach(function (e) {
+            if (e.isIntersecting) { run(e.target); io2.unobserve(e.target); }
+          });
+        }, { threshold: 0.4 });
+        nums.forEach(function (n) { io2.observe(n); });
+      }
+    }
+
+    /* 4) logo 明暗切换：主题只支持一张 logo，这里按 data-theme 换图。
+          文件名约定 logo-light.png / logo-dark.png，只替换文件名，
+          保留 url_for 生成的相对前缀，换域名换子路径都不受影响。 */
+    var logos = Array.prototype.slice.call(document.querySelectorAll('img[class*="brand__logo"]'));
+    logos.forEach(function (img) {
+      var src = img.getAttribute('src') || '';
+      if (!/logo-(light|dark)\.png/.test(src)) return;
+      img.setAttribute('data-logo-light', src.replace(/logo-(light|dark)\.png/, 'logo-light.png'));
+      img.setAttribute('data-logo-dark', src.replace(/logo-(light|dark)\.png/, 'logo-dark.png'));
+    });
+    function applyLogo() {
+      var dark = document.documentElement.getAttribute('data-theme') === 'dark';
+      logos.forEach(function (img) {
+        var next = img.getAttribute(dark ? 'data-logo-dark' : 'data-logo-light');
+        if (next && img.getAttribute('src') !== next) img.setAttribute('src', next);
+      });
+    }
+    if (logos.length) {
+      applyLogo();
+      if ('MutationObserver' in window) {
+        new MutationObserver(applyLogo).observe(document.documentElement, {
+          attributes: true, attributeFilter: ['data-theme']
+        });
+      }
+    }
+
+    /* 3) 阅读进度条 */
+    var bar = document.createElement('div');
+    bar.className = 'ht-progress';
+    document.body.appendChild(bar);
+    if (!reduce) {
+      var tick = false;
+      var update = function () {
+        var h = document.documentElement;
+        var max = h.scrollHeight - h.clientHeight;
+        bar.style.width = (max > 0 ? (h.scrollTop || document.body.scrollTop) / max * 100 : 0) + '%';
+        tick = false;
+      };
+      window.addEventListener('scroll', function () {
+        if (!tick) { tick = true; requestAnimationFrame(update); }
+      }, { passive: true });
+      update();
+    }
+  });
+})();
