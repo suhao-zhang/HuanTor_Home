@@ -214,6 +214,6 @@ seo:
 analytics:
   google: ""
   cloudflare: ""
-  umami: ""
+  umami: "7f0f4060-ce06-4091-a2ce-e44317edacaa"
   umami_server: "https://cloud.umami.is"   # 注册时选了欧洲区就改成 https://eu.umami.is
-  clarity: ""
+  clarity: "z2w2zlc2y0"
