@@ -1,6 +1,7 @@
 ---
 title: 从 Avalonia 3D 地球看跨平台 UI 框架的未来
-date: 2026-10-24 15:10:00
+date: 2026-09-26 16:01:00
+updated: 2026-09-26 16:01:00
 categories: [开发工具]
 tags: [Avalonia, 跨平台, UI框架, 桌面开发, 技术趋势]
 cover: /images/posts/avalonia-future-trend.png

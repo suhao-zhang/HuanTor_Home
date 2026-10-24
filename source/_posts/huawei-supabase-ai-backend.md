@@ -1,6 +1,7 @@
 ---
 title: 30分钟搭建AI应用后端：洹拓科技解读华为云Supabase公测
-date: 2026-10-24 09:59:00
+date: 2026-10-24 17:17:00
+updated: 2026-10-24 17:17:00
 categories: [云服务]
 tags: [华为云, Supabase, AI后端, 云服务, 数据库]
 cover: /images/posts/huawei-supabase-ai.png

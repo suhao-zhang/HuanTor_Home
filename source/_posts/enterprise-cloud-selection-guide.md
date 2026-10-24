@@ -1,6 +1,7 @@
 ---
 title: 中小企业上云怎么选？洹拓科技的云服务选型指南
-date: 2026-10-24 13:31:00
+date: 2026-09-18 15:51:00
+updated: 2026-09-18 15:51:00
 categories: [云服务]
 tags: [企业上云, 云服务选型, 服务器, 云计算, 成本优化]
 cover: /images/posts/enterprise-cloud-migration.png

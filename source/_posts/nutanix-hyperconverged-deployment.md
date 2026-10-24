@@ -1,6 +1,7 @@
 ---
 title: Nutanix 超融合架构原理与集群部署实战
-date: 2026-10-24 11:58:00
+date: 2026-09-11 14:41:00
+updated: 2026-09-11 14:41:00
 categories: [云服务]
 tags: [Nutanix, 超融合, 私有云, 集群部署, 虚拟化]
 cover: /images/posts/nutanix-hyperconverged.png

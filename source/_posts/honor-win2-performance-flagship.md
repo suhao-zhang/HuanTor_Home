@@ -1,6 +1,7 @@
 ---
 title: 荣耀WIN2系列新品发布：性能旗舰的差异化路线与行业启示
-date: 2026-10-24 18:34:00
+date: 2026-10-09 16:07:00
+updated: 2026-10-09 16:07:00
 categories: [产品评测, 行业动态]
 tags: [荣耀WIN2, 性能旗舰, 手机评测, 行业观察, 洹拓科技]
 cover: /images/posts/ux-design-thinking.png

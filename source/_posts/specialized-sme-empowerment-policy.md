@@ -1,6 +1,7 @@
 ---
 title: 专精特新赋能中心政策解读：中小企业如何抓住红利
-date: 2026-10-24 10:20:00
+date: 2026-09-04 14:38:00
+updated: 2026-09-04 14:38:00
 categories: [行业动态]
 tags: [专精特新, 中小企业, 政策解读, 数字化转型, 工信部]
 cover: /images/posts/specialized-sme-policy.png

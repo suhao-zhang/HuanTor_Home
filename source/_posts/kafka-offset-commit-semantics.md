@@ -1,6 +1,7 @@
 ---
 title: Kafka 的 Offset 到底提交了什么：消息级进度是个伪命题
-date: 2026-10-24 09:49:00
+date: 2026-09-01 10:10:00
+updated: 2026-09-01 10:10:00
 categories: [后端架构]
 tags: [Kafka, 消息队列, Offset, 幂等, 重复消费]
 cover: /images/posts/kafka-offset-commit.png

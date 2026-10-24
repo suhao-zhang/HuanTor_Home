@@ -1,6 +1,7 @@
 ---
 title: 英特尔CTO称与台积电制程差距小于10%：芯片制造格局即将重塑
-date: 2026-10-24 16:47:00
+date: 2026-10-03 17:11:00
+updated: 2026-10-03 17:11:00
 categories: [行业动态, 技术观察]
 tags: [英特尔, 台积电, 芯片制程, 半导体产业, 洹拓科技]
 cover: /images/posts/intel-tsmc-chip-process.png

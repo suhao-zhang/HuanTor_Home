@@ -1,6 +1,7 @@
 ---
 title: OSS + 百炼大模型：用自然语言搜图的视频监控系统实战
-date: 2026-10-24 10:06:00
+date: 2026-09-03 12:24:00
+updated: 2026-09-03 12:24:00
 categories: [AI应用]
 tags: [OSS, 百炼, 视频监控, 自然语言搜索, 向量索引, AI安防]
 cover: /images/posts/oss-bailian-video-surveillance.png

@@ -1,6 +1,7 @@
 ---
 title: Kubernetes API Server 认证机制深度解析
-date: 2026-10-24 08:01:00
+date: 2026-08-25 09:00:00
+updated: 2026-08-25 09:00:00
 categories: [云原生安全]
 tags: [Kubernetes, RBAC, 认证, 云原生, 安全运维]
 cover: /images/posts/k8s-rbac-auth.png

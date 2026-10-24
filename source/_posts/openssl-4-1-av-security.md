@@ -1,6 +1,7 @@
 ---
 title: OpenSSL 4.1正式发布：实时音视频安全迎来革命性升级
-date: 2026-10-24 16:06:00
+date: 2026-09-30 13:43:00
+updated: 2026-09-30 13:43:00
 categories: [网络安全, 技术更新]
 tags: [OpenSSL, 音视频安全, 加密协议, 网络安全升级, 洹拓科技]
 cover: /images/posts/openssl-4-1-security.png

@@ -1,6 +1,7 @@
 ---
 title: 用 AI 把 9795 个老预设搬进新图形栈：遗留移植能做到什么程度
-date: 2026-10-24 17:07:00
+date: 2026-10-24 17:53:00
+updated: 2026-10-24 17:53:00
 categories: [AI工程化]
 tags: [遗留系统, 代码移植, ANGLE, 图形栈, AI辅助开发]
 cover: /images/posts/legacy-porting-ai.png

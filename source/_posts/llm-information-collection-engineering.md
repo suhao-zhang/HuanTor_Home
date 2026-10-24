@@ -1,6 +1,7 @@
 ---
 title: 两天烧100亿Token：拓科技谈大模型信息收集的工程化实践
-date: 2026-10-24 11:32:00
+date: 2026-10-24 17:57:00
+updated: 2026-10-24 17:57:00
 categories: [AI应用]
 tags: [大模型, 信息收集, Token消耗, 工程化, 数据处理]
 cover: /images/posts/llm-information-collection.png

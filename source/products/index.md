@@ -94,6 +94,30 @@ date: 2026-10-24 08:50:00
   </div>
 </div>
 
+<div class="section-head" style="margin-top: 72px;">
+  <h2>详细方案说明</h2>
+  <p>三条主线各有一页，写清适合什么情况、怎么做、交付什么、怎么验收</p>
+</div>
+
+<div class="quicklinks__grid ht-stagger" style="grid-template-columns: repeat(2, minmax(0, 1fr));">
+  <a class="quicklink" href="../solutions/enterprise-knowledge-base/">
+    <span class="quicklink__icon"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="1em" height="1em" aria-hidden="true"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg></span>
+    <span class="quicklink__name">企业知识库与智能问答</span>
+  </a>
+  <a class="quicklink" href="../solutions/industrial-vision-platform/">
+    <span class="quicklink__icon"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="1em" height="1em" aria-hidden="true"><line x1="4" y1="21" x2="4" y2="14"/><line x1="4" y1="10" x2="4" y2="3"/><line x1="12" y1="21" x2="12" y2="12"/><line x1="12" y1="8" x2="12" y2="3"/><line x1="20" y1="21" x2="20" y2="16"/><line x1="20" y1="12" x2="20" y2="3"/><line x1="1" y1="14" x2="7" y2="14"/><line x1="9" y1="8" x2="15" y2="8"/><line x1="17" y1="16" x2="23" y2="16"/></svg></span>
+    <span class="quicklink__name">工业视觉与设备数据平台</span>
+  </a>
+  <a class="quicklink" href="../solutions/saas-and-geo/">
+    <span class="quicklink__icon"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="1em" height="1em" aria-hidden="true"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg></span>
+    <span class="quicklink__name">SaaS 系统与 GEO 优化</span>
+  </a>
+  <a class="quicklink" href="../tech/">
+    <span class="quicklink__icon"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="1em" height="1em" aria-hidden="true"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg></span>
+    <span class="quicklink__name">技术栈与工程实践</span>
+  </a>
+</div>
+
 <p class="section-more">
   <a class="btn btn--primary" href="../contact/">获取方案与报价<svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="1em" height="1em" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
   <a class="btn btn--ghost" href="../about/">了解我们怎么交付</a>

@@ -1,6 +1,7 @@
 ---
 title: iOS 崩溃排查不再靠猜：基于 KSCrash 的分层捕获指南
-date: 2026-10-24 12:25:00
+date: 2026-09-13 17:02:00
+updated: 2026-09-13 17:02:00
 categories: [开发工具]
 tags: [iOS, 崩溃排查, KSCrash, 移动端开发, 稳定性]
 cover: /images/posts/ios-crash-capture.png

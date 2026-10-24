@@ -1,6 +1,7 @@
 ---
 title: 洹拓科技核心业务一览
-date: 2026-10-24 08:59:00
+date: 2026-08-28 13:28:00
+updated: 2026-08-28 13:28:00
 categories: [公司动态]
 tags: [业务介绍]
 cover: /images/thumb-1.svg

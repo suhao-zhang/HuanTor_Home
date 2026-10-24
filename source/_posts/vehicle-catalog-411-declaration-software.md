@@ -1,6 +1,7 @@
 ---
 title: 第411批车辆生产企业及产品公告落地：申报窗口期，企业的软件与文档准备清单
-date: 2026-10-24 08:41:00
+date: 2026-10-24 18:00:00
+updated: 2026-10-24 18:00:00
 categories: [政策解读]
 tags: [工信部, 车辆准入, 申报, 文档管理, 政策]
 cover: /images/posts/vehicle-catalog-411.png

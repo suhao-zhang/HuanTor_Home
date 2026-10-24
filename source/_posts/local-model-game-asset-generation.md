@@ -1,6 +1,7 @@
 ---
 title: 低成本本地模型能做多好的游戏素材？洹拓科技的AIGC实践报告
-date: 2026-10-24 10:59:00
+date: 2026-10-24 10:31:00
+updated: 2026-10-24 10:31:00
 categories: [AIGC]
 tags: [本地模型, 游戏素材, AIGC, 角色设计, Qwen]
 cover: /images/posts/local-model-game-assets.png

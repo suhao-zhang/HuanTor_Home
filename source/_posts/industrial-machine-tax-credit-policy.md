@@ -1,6 +1,7 @@
 ---
 title: 工业母机增值税加计抵减政策落地：制造业数字化转型的成本优化指南
-date: 2026-10-24 17:28:00
+date: 2026-10-05 11:32:00
+updated: 2026-10-05 11:32:00
 categories: [政策解读, 制造业]
 tags: [工业母机, 增值税, 加计抵减, 制造业数字化, 洹拓科技]
 cover: /images/posts/5g-factory-catalog-policy.png

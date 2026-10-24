@@ -1,6 +1,7 @@
 ---
 title: 一个YOLO面板打通三大IDE：洹拓科技谈AI编程助手的统一体验
-date: 2026-10-24 10:31:00
+date: 2026-10-24 09:24:00
+updated: 2026-10-24 09:24:00
 categories: [开发工具]
 tags: [IDE, AI编程, Agent, 开发效率, 工具链]
 cover: /images/posts/agent-yolo-ide.png

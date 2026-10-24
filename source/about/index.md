@@ -234,6 +234,49 @@ date: 2026-10-24 08:50:00
 </div>
 
 <div class="section-head" style="margin-top: 72px;">
+  <h2>团队与协作</h2>
+  <p>本地直营，不分包、不转手</p>
+</div>
+
+<div class="services__grid ht-stagger">
+  <div class="service-card">
+    <span class="service-card__icon"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="1em" height="1em" aria-hidden="true"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg></span>
+    <h3>需求与方案</h3>
+    <p>到现场把场景、数据和验收标准问清楚，输出可执行的方案与报价。这一步的人后面也在项目里。</p>
+  </div>
+  <div class="service-card">
+    <span class="service-card__icon"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="1em" height="1em" aria-hidden="true"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg></span>
+    <h3>算法与数据</h3>
+    <p>模型选型与微调、数据链路与检索策略、效果评估与错例分析，负责把效果做到可验收。</p>
+  </div>
+  <div class="service-card">
+    <span class="service-card__icon"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="1em" height="1em" aria-hidden="true"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg></span>
+    <h3>工程与部署</h3>
+    <p>前后端与系统集成、容器化部署、权限与可观测，负责系统能在真实环境里稳定跑。</p>
+  </div>
+  <div class="service-card">
+    <span class="service-card__icon"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="1em" height="1em" aria-hidden="true"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8z"/></svg></span>
+    <h3>运营与支持</h3>
+    <p>上线后的培训、内容维护、数据看板与故障响应，也负责 GEO 监测与迭代建议。</p>
+  </div>
+</div>
+
+<div class="ht-stack" style="margin-top: 34px;">
+  <div class="ht-stack__group">
+    <h3>协作方式</h3>
+    <div class="about__text">
+      <p>四类角色通常由同一批人承担，从需求到运维不换人对接。项目按里程碑推进，每个阶段都有能验收的产出物，不做"先签合同再想做什么"。</p>
+    </div>
+  </div>
+  <div class="ht-stack__group">
+    <h3>我们的取舍</h3>
+    <div class="about__text">
+      <p>接得住的才接。需要持牌资质的支付结算业务本身、承诺"保证收录""保证排名第一"这类无法验证的效果，我们不做，也会在方案阶段直接说明原因。</p>
+    </div>
+  </div>
+</div>
+
+<div class="section-head" style="margin-top: 72px;">
   <h2>找我们聊</h2>
   <p>说清场景和数据现状，我们给可落地的方案与报价</p>
 </div>

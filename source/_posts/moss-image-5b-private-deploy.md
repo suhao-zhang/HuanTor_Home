@@ -1,6 +1,7 @@
 ---
 title: 5B 参数的生图模型为什么值得本地部署：以 MOSS-Image 为例算一笔账
-date: 2026-10-24 13:43:00
+date: 2026-10-24 17:56:00
+updated: 2026-10-24 17:56:00
 categories: [AI应用]
 tags: [AIGC, 生图模型, 私有化部署, ComfyUI, 开源]
 cover: /images/posts/moss-image-private-deploy.png

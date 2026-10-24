@@ -1,6 +1,7 @@
 ---
 title: 2026 数据可视化平台选型指南：告别丑图表
-date: 2026-10-24 09:09:00
+date: 2026-08-29 15:42:00
+updated: 2026-08-29 15:42:00
 categories: [开发工具]
 tags: [数据可视化, BI, Quick BI, 报表, 企业数字化]
 cover: /images/posts/data-visualization-platform.png

@@ -1,6 +1,7 @@
 ---
 title: 四部门联手整治"申报中介"：专精特新认定为什么不能外包
-date: 2026-10-24 09:13:00
+date: 2026-10-24 17:59:00
+updated: 2026-10-24 17:59:00
 categories: [政策解读]
 tags: [专精特新, 中小企业, 申报, 合规, 数据核验]
 cover: /images/posts/sme-certification-agency.png

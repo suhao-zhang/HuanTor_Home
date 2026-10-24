@@ -1,6 +1,7 @@
 ---
 title: 别追"零违规"：把 axe-core 挂进 Playwright 用基线门禁控住无障碍
-date: 2026-10-24 16:25:00
+date: 2026-10-01 15:57:00
+updated: 2026-10-01 15:57:00
 categories: [开发工具]
 tags: [无障碍, WCAG, Playwright, axe-core, CI]
 cover: /images/posts/axe-core-playwright-ci.png

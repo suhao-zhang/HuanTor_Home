@@ -1,6 +1,7 @@
 ---
 title: 只测最终结果等于放弃过程：拓科技谈Agent行为评估工程化
-date: 2026-10-24 13:59:00
+date: 2026-10-12 12:42:00
+updated: 2026-10-12 12:42:00
 categories: [AI测试]
 tags: [Agent测试, 行为评估, 质量保障, AI工程化, 测试]
 cover: /images/posts/agent-behavior-testing.png

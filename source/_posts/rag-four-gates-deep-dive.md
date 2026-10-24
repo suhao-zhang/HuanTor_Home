@@ -1,6 +1,7 @@
 ---
 title: 向量库选对了RAG还是死在Demo：企业级落地的四道生死关深度拆解
-date: 2026-10-24 18:08:00
+date: 2026-10-07 14:53:00
+updated: 2026-10-07 14:53:00
 categories: [AI技术, 架构设计]
 tags: [向量库, RAG, 企业级落地, 检索增强生成, 洹拓科技]
 cover: /images/posts/aiops-cloud-native.png

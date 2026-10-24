@@ -1,6 +1,7 @@
 ---
 title: JDK 17 升级后单测集体报 InaccessibleObjectException：--add-opens 该怎么加才对
-date: 2026-10-24 10:23:00
+date: 2026-09-05 15:45:00
+updated: 2026-09-05 15:45:00
 categories: [开发工具]
 tags: [JDK17, Maven, Surefire, Mockito, 模块化]
 cover: /images/posts/jdk17-maven-add-opens.png

@@ -1,6 +1,7 @@
 ---
 title: DeepSeek-V4.1-Flash发布：拓科技解读性价比最高的新模型
-date: 2026-10-24 11:31:00
+date: 2026-10-20 14:56:00
+updated: 2026-10-20 14:56:00
 categories: [AI前沿]
 tags: [DeepSeek, 新模型, 性价比, 开源, 大模型]
 cover: /images/posts/deepseek-new-model.png

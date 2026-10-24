@@ -24,6 +24,7 @@ menu:
   - { name: "关于我们", url: "/about/" }
   - { name: "产品服务", url: "/products/" }
   - { name: "新闻动态", url: "/news/" }
+  - { name: "技术栈", url: "/tech/" }
   - { name: "联系我们", url: "/contact/" }
 
 nav_button:
@@ -95,9 +96,9 @@ products:
   title: "产品与方案"
   subtitle: "按企业实际场景组合交付"
   items:
-    - { image: "/images/thumb-1.svg", title: "企业知识库与智能问答", desc: "把制度、工艺、售后文档变成可追问的问答与工单助手。", url: "/products/", tags: ["大模型", "RAG", "Agent"] }
-    - { image: "/images/thumb-2.svg", title: "工业视觉与设备数据平台", desc: "缺陷检测、参数寻优与产线看板，数据回流闭环。", url: "/products/", tags: ["工业 AI", "视觉", "数据"] }
-    - { image: "/images/thumb-3.svg", title: "SaaS 系统与 GEO 优化", desc: "业务系统 SaaS 化交付，配套内容运营与 AI 搜索可见性优化。", url: "/products/", tags: ["SaaS", "云服务", "GEO"] }
+    - { image: "/images/thumb-1.svg", title: "企业知识库与智能问答", desc: "把制度、工艺、售后文档变成可追问的问答与工单助手。", url: "/solutions/enterprise-knowledge-base/", tags: ["大模型", "RAG", "Agent"] }
+    - { image: "/images/thumb-2.svg", title: "工业视觉与设备数据平台", desc: "缺陷检测、参数寻优与产线看板，数据回流闭环。", url: "/solutions/industrial-vision-platform/", tags: ["工业 AI", "视觉", "数据"] }
+    - { image: "/images/thumb-3.svg", title: "SaaS 系统与 GEO 优化", desc: "业务系统 SaaS 化交付，配套内容运营与 AI 搜索可见性优化。", url: "/solutions/saas-and-geo/", tags: ["SaaS", "云服务", "GEO"] }
   link:
     name: "查看全部"
     url: "/products/"
@@ -108,7 +109,7 @@ products:
 news:
   title: "技术与行业动态"
   subtitle: "我们对 AI 工程化落地的观察"
-  count: 3
+  count: 6
   more:
     name: "查看全部"
     url: "/news/"

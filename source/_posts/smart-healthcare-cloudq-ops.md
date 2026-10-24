@@ -1,6 +1,7 @@
 ---
 title: 智慧医疗局点线上故障协同处置方案
-date: 2026-10-24 08:38:00
+date: 2026-08-26 11:14:00
+updated: 2026-08-26 11:14:00
 categories: [行业解决方案]
 tags: [智慧医疗, 运维, 故障排查, 协同办公, 云服务]
 cover: /images/posts/smart-healthcare-ops.png

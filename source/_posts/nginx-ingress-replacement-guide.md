@@ -1,6 +1,7 @@
 ---
 title: Nginx Ingress 退役在即：云原生网关选型避坑指南
-date: 2026-10-24 09:52:00
+date: 2026-09-02 11:17:00
+updated: 2026-09-02 11:17:00
 categories: [云原生安全]
 tags: [Nginx, Ingress, 云原生, 网关, Kubernetes, Higress]
 cover: /images/posts/nginx-ingress-replacement.png

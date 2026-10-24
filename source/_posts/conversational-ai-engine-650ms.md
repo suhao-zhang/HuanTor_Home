@@ -1,6 +1,7 @@
 ---
 title: 全球首个对话式AI引擎发布：650ms超低延时如何重塑实时交互体验
-date: 2026-10-24 15:39:00
+date: 2026-09-28 10:22:00
+updated: 2026-09-28 10:22:00
 categories: [AI技术, 产品开发]
 tags: [对话式AI, 实时语音, 低延时, AI引擎, 洹拓科技]
 cover: /images/posts/realtime-voice-ai-engine.png

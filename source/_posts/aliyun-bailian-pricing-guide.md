@@ -1,6 +1,7 @@
 ---
 title: 阿里云百炼计费策略详解：TokenPlan、CodingPlan还是按量付费？
-date: 2026-10-24 08:55:00
+date: 2026-08-27 12:21:00
+updated: 2026-08-27 12:21:00
 categories: [云服务]
 tags: [阿里云, 大模型, 计费策略, 成本优化, Token]
 cover: /images/posts/aliyun-bailian-pricing.png

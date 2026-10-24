@@ -1,6 +1,7 @@
 ---
 title: 三星西安厂转 286 层、海力士大连厂升层：企业采购该怎么读这条新闻
-date: 2026-10-24 14:13:00
+date: 2026-10-24 17:55:00
+updated: 2026-10-24 17:55:00
 categories: [云服务]
 tags: [存储, NAND, 服务器采购, 成本, 供应链]
 cover: /images/posts/nand-storage-upgrade.png

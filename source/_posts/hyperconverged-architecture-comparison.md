@@ -1,6 +1,7 @@
 ---
 title: 超融合架构深度对比：Nutanix vs VMware vSAN vs Ceph
-date: 2026-10-24 14:57:00
+date: 2026-09-25 15:54:00
+updated: 2026-09-25 15:54:00
 categories: [云服务]
 tags: [超融合, Nutanix, VMware, Ceph, 私有云, 架构对比]
 cover: /images/posts/hyperconverged-architecture-comparison.png

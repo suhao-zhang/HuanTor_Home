@@ -1,6 +1,7 @@
 ---
 title: 三天、一个MCP、158条数据：拓科技谈MCP协议的实战价值
-date: 2026-10-24 09:31:00
+date: 2026-10-10 09:21:00
+updated: 2026-10-10 09:21:00
 categories: [AI工程化]
 tags: [MCP, AI Agent, 协议, 开发效率, 工具链]
 cover: /images/posts/mcp-protocol-practice.png

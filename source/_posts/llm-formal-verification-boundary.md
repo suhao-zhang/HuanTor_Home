@@ -1,6 +1,7 @@
 ---
 title: 1.8 亿行机器可核验证明之后：AI 找 Bug 的能力边界在哪
-date: 2026-10-24 11:19:00
+date: 2026-10-24 17:58:00
+updated: 2026-10-24 17:58:00
 categories: [AI工程化]
 tags: [形式化验证, 大模型, 代码安全, 测试, Anthropic]
 cover: /images/posts/llm-formal-verification.png

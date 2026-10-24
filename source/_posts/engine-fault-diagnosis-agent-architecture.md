@@ -1,6 +1,7 @@
 ---
 title: 故障样本只有几十条时，工业设备诊断模型怎么搭：三段式架构拆解
-date: 2026-10-24 15:13:00
+date: 2026-10-24 17:54:00
+updated: 2026-10-24 17:54:00
 categories: [AI技术, 智能制造]
 tags: [预测性维护, 时序数据, LSTM自编码器, 对比学习, 工业AI]
 cover: /images/posts/engine-diagnosis-agent.png

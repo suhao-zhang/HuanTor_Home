@@ -1,6 +1,7 @@
 ---
 title: 从零搭建企业级RAG系统：洹拓科技的检索增强生成实战指南
-date: 2026-10-24 13:29:00
+date: 2026-09-17 14:44:00
+updated: 2026-09-17 14:44:00
 categories: [AI前沿]
 tags: [RAG, 检索增强生成, 向量数据库, 大模型应用]
 cover: https://images.unsplash.com/photo-1655720828018-edd2daec9349?w=800

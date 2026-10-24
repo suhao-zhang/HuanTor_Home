@@ -1,6 +1,7 @@
 ---
 title: 产品设计中的用户体验思维：从 iPhone Duo 说起
-date: 2026-10-24 09:23:00
+date: 2026-08-30 16:49:00
+updated: 2026-08-30 16:49:00
 categories: [产品设计]
 tags: [用户体验, 产品设计, 交互设计, 苹果, 设计思维]
 cover: /images/posts/ux-design-thinking.png

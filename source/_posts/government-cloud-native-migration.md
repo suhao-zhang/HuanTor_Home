@@ -1,6 +1,7 @@
 ---
 title: 政务系统云原生改造实践：从河南电子化平台升级说起
-date: 2026-10-24 09:37:00
+date: 2026-09-01 09:03:00
+updated: 2026-09-01 09:03:00
 categories: [政务IT]
 tags: [政务系统, 云原生, 系统升级, 数字化转型, 微服务]
 cover: /images/posts/government-cloud-native.png

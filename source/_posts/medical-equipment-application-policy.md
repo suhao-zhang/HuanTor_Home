@@ -1,6 +1,7 @@
 ---
 title: 高端医疗装备推广应用项目申报启动：医疗器械企业的政策红利与数字化机遇
-date: 2026-10-24 17:15:00
+date: 2026-10-04 10:25:00
+updated: 2026-10-04 10:25:00
 categories: [政策解读, 医疗健康]
 tags: [高端医疗装备, 政策申报, 医疗器械, 数字化转型, 洹拓科技]
 cover: /images/posts/smart-healthcare-ops.png

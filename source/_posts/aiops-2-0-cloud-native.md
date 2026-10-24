@@ -1,6 +1,7 @@
 ---
 title: 大模型驱动AIOps 2.0：拓科技谈云原生智能运维的落地实践
-date: 2026-10-24 10:01:00
+date: 2026-10-11 10:28:00
+updated: 2026-10-11 10:28:00
 categories: [智能运维]
 tags: [AIOps, 云原生, 大模型, 运维自动化, 告警治理]
 cover: /images/posts/aiops-cloud-native.png
