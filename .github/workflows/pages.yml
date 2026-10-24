@@ -40,6 +40,8 @@ jobs:
 
       - name: Configure Pages
         uses: actions/configure-pages@v5
+        with:
+          enablement: true   # 首次运行自动把仓库的 Pages 构建源切换为 GitHub Actions
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
