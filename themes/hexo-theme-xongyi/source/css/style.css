@@ -460,6 +460,33 @@ body.preset-government .cta-band__inner { background: linear-gradient(120deg, va
 .post-content pre code, .page-content pre code {
   background: transparent; color: #dbe4f3; padding: 0; font-size: 13.5px; line-height: 1.65;
 }
+
+/* 修复 Hexo highlight.js 表格结构 */
+.post-content figure.highlight, .page-content figure.highlight {
+  margin: 18px 0; border-radius: 12px; overflow: hidden;
+  background: #0d1526; border: 1px solid var(--border);
+}
+.post-content figure.highlight table, .page-content figure.highlight table {
+  margin: 0; padding: 0; border: none; width: 100%;
+}
+.post-content figure.highlight td, .page-content figure.highlight td {
+  padding: 18px 20px; border: none; vertical-align: top;
+}
+.post-content figure.highlight td.gutter, .page-content figure.highlight td.gutter {
+  width: 40px; text-align: right; color: #6b7a99; user-select: none;
+  border-right: 1px solid #1e2d4a;
+}
+.post-content figure.highlight td.code, .page-content figure.highlight td.code {
+  padding-left: 16px;
+}
+.post-content figure.highlight pre, .page-content figure.highlight pre {
+  margin: 0; padding: 0; background: transparent; border: none;
+}
+.post-content figure.highlight .line, .page-content figure.highlight .line {
+  color: #dbe4f3; font-size: 13.5px; line-height: 1.65;
+}
+:root[data-theme="dark"] .post-content figure.highlight,
+:root[data-theme="dark"] .page-content figure.highlight { background: #0a111f; }
 .post-content img, .page-content img { border-radius: 12px; margin: 10px 0; }
 
 /* 文章标签 */
