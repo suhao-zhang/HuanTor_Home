@@ -1,6 +1,6 @@
 ---
 title: 工业互联网"百城千园行"落地指南：园区数字化怎么做
-date: 2026-10-26 10:30:00
+date: 2026-10-24 10:35:00
 categories: [行业动态]
 tags: [工业互联网, 智慧园区, 数字化转型, 智能制造, 政策]
 cover: /images/posts/industrial-internet-park.png

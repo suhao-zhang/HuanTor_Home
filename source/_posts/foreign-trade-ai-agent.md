@@ -1,6 +1,6 @@
 ---
 title: 外贸获客 Agent 能力解析：从任务创建到效果诊断
-date: 2026-10-27 13:00:00
+date: 2026-10-24 13:06:00
 categories: [AI应用]
 tags: [AI Agent, 外贸, 获客, 多模态, 智能营销]
 cover: /images/posts/foreign-trade-agent.png

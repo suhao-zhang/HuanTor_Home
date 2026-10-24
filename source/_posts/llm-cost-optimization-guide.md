@@ -1,6 +1,6 @@
 ---
 title: 大模型调用太贵？洹拓科技的四步成本优化方案
-date: 2026-10-24 13:00:00
+date: 2026-10-24 13:01:00
 categories: [AI应用]
 tags: [大模型, 成本优化, API调用, Token, 云服务]
 cover: /images/posts/llm-cost-optimization.png

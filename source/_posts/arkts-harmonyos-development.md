@@ -1,6 +1,6 @@
 ---
 title: ArkTS 鸿蒙开发入门：从变量声明到应用上线
-date: 2026-10-26 13:00:00
+date: 2026-10-24 11:16:00
 categories: [开发工具]
 tags: [ArkTS, 鸿蒙, HarmonyOS, 移动端开发, 华为]
 cover: /images/posts/arkts-harmonyos-development.png

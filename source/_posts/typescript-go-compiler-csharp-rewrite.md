@@ -1,6 +1,6 @@
 ---
 title: TypeScript-Go编译器引发热议：有人用C#重写，跨语言工具链的生态博弈
-date: 2026-10-30 10:30:00
+date: 2026-10-24 17:54:00
 categories: [开发技术, 开源项目]
 tags: [TypeScript, Go编译器, C#, 跨语言工具, 洹拓科技]
 cover: /images/posts/avalonia-future-trend.png

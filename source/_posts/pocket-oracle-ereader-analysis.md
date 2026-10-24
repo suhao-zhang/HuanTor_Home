@@ -1,6 +1,6 @@
 ---
 title: 口袋先知墨水屏设备产品分析：轻决策时代的硬件新物种
-date: 2026-10-28 11:30:00
+date: 2026-10-24 14:44:00
 categories: [产品设计]
 tags: [墨水屏, 硬件, 产品设计, 效率工具, 轻决策]
 cover: /images/posts/pocket-oracle-ereader.png

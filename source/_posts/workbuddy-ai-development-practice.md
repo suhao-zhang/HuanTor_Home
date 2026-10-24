@@ -1,6 +1,6 @@
 ---
 title: WorkBuddy 实战：用 AI 开发助手三天做出 GitHub Star 大赛项目
-date: 2026-10-26 13:30:00
+date: 2026-10-24 11:28:00
 categories: [AI应用]
 tags: [AI开发, WorkBuddy, 效率工具, GitHub, 代码生成]
 cover: /images/posts/workbuddy-ai-development.png

@@ -1,6 +1,6 @@
 ---
 title: 国产算力·昇腾910C大模型推理优化：拓科技的20项改进实践
-date: 2026-10-24 11:00:00
+date: 2026-10-24 11:01:00
 categories: [AI工程化]
 tags: [国产算力, 昇腾, 推理优化, 大模型, 性能调优]
 cover: /images/posts/domestic-ai-chip.png

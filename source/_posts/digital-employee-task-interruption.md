@@ -1,6 +1,6 @@
 ---
 title: 数字员工任务中断怎么办？洹拓科技的断点续跑与幂等重跑方案
-date: 2026-10-24 12:00:00
+date: 2026-10-24 12:01:00
 categories: [技术实践]
 tags: [数字员工, 自动化, 任务调度, 幂等性, 运维]
 cover: https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=800

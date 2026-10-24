@@ -1,6 +1,6 @@
 ---
 title: WebMCP 实战：让 AI 在网页里创作音乐
-date: 2026-10-25 10:00:00
+date: 2026-10-24 08:27:00
 categories: [AI创意应用]
 tags: [MCP, WebAI, 音乐生成, 创意工具, 前端开发]
 cover: /images/posts/webmcp-music-creation.png

@@ -1,6 +1,6 @@
 ---
 title: OPPO Enco X4深度评测：千元档降噪综合能力第一的实力从何而来
-date: 2026-10-30 11:30:00
+date: 2026-10-24 18:21:00
 categories: [产品评测, 消费电子]
 tags: [OPPO Enco X4, 降噪耳机, 音频评测, 消费电子, 洹拓科技]
 cover: /images/posts/pocket-oracle-ereader.png

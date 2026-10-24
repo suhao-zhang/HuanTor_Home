@@ -1,6 +1,6 @@
 ---
 title: 白描 PDF 鸿蒙版首发评测：OCR 文件识别利器
-date: 2026-10-27 11:30:00
+date: 2026-10-24 12:52:00
 categories: [开发工具]
 tags: [白描, 鸿蒙, OCR, 文件识别, HarmonyOS, 效率工具]
 cover: /images/posts/baimiao-pdf-harmonyos.png

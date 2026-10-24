@@ -1,6 +1,6 @@
 ---
 title: Agent 行为评估新范式：用 Trajectory 断言替代结果校验
-date: 2026-10-27 13:30:00
+date: 2026-10-24 13:19:00
 categories: [AI测试]
 tags: [Agent测试, 行为评估, Trajectory, pytest, AI工程化]
 cover: /images/posts/agent-trajectory-evaluation.png

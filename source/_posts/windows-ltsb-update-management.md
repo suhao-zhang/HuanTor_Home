@@ -1,6 +1,6 @@
 ---
 title: Windows 10 LTSB 企业更新管理：如何彻底关闭自动更新
-date: 2026-10-28 10:30:00
+date: 2026-10-24 14:16:00
 categories: [安全运维]
 tags: [Windows, LTSB, 更新管理, 企业IT, 运维]
 cover: /images/posts/windows-ltsb-update-management.png

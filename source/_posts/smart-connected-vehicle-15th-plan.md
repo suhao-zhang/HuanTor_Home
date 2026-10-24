@@ -1,6 +1,6 @@
 ---
 title: 智能网联新能源汽车"十五五"规划：拓科技解读产业数字化机遇
-date: 2026-10-24 13:30:00
+date: 2026-10-24 13:32:00
 categories: [行业动态]
 tags: [智能网联, 新能源汽车, 十五五规划, 产业政策, 数字化]
 cover: /images/posts/smart-connected-vehicle.png

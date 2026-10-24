@@ -1,6 +1,6 @@
 ---
 title: 千问Qwen3.8即将开源：洹拓科技解读2.4T参数大模型背后的产业机遇
-date: 2026-10-24 09:30:00
+date: 2026-10-24 09:29:00
 categories: [AI前沿]
 tags: [大模型, Qwen, 开源, AI应用]
 cover: https://images.unsplash.com/photo-1677442136019-21780ecad995?w=800

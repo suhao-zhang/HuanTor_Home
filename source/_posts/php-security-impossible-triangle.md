@@ -1,6 +1,6 @@
 ---
 title: PHP 漏洞背后的安全"不可能三角"：从 C# 视角重新审视
-date: 2026-10-28 10:00:00
+date: 2026-10-24 14:02:00
 categories: [安全运维]
 tags: [PHP, C#, 安全, 漏洞, 不可能三角, 语言对比]
 cover: /images/posts/php-security-impossible-triangle.png

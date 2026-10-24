@@ -1,6 +1,6 @@
 ---
 title: 人形机器人年增长率将突破30%：通用具身基座模型开启智能制造新时代
-date: 2026-10-29 09:00:00
+date: 2026-10-24 15:25:00
 categories: [AI技术, 智能制造]
 tags: [人形机器人, 具身智能, 多模态大模型, 智能制造, 洹拓科技]
 cover: /images/posts/humanoid-robot-embodied-ai.png

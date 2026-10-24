@@ -1,6 +1,6 @@
 ---
 title: Vitals监控工具评测：Mac系统监控的新一代解决方案
-date: 2026-10-29 13:30:00
+date: 2026-10-24 17:00:00
 categories: [产品评测, 开发工具]
 tags: [Mac监控, Vitals, 系统性能, 开发工具, 洹拓科技]
 cover: /images/posts/mac-vitals-monitoring.png

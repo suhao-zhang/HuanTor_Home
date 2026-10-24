@@ -1,6 +1,6 @@
 ---
 title: GEO 虚假信源泛滥：如何甄别 AI 搜索中的风险渠道
-date: 2026-10-28 09:30:00
+date: 2026-10-24 13:48:00
 categories: [AI安全]
 tags: [GEO, AI搜索, 虚假信源, 数据安全, 风险甄别]
 cover: /images/posts/geo-fake-source-detection.png

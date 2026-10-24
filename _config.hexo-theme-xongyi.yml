@@ -171,6 +171,13 @@ footer:
         - { name: "产品服务", url: "/products/" }
         - { name: "联系我们", url: "/contact/" }
         - { name: "归档", url: "/archives/" }
+    # 数组只能按下标替换或追加，这里追加第三列，把机器可读的入口都放到明面上
+    - title: "站点信息"
+      items:
+        - { name: "网站地图 XML", url: "/sitemap.xml" }
+        - { name: "RSS 订阅", url: "/atom.xml" }
+        - { name: "robots.txt", url: "/robots.txt" }
+        - { name: "llms.txt", url: "/llms.txt" }
   copyright: "© 2026 新乡洹拓科技有限公司 · 保留所有权利"
   icp: ""                     # 备案下来后填，如 豫ICP备00000000号
   icp_url: "https://beian.miit.gov.cn/"

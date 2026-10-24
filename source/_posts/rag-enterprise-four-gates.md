@@ -1,6 +1,6 @@
 ---
 title: 向量库选对了，RAG还是死在Demo：拓科技谈企业级落地的四道生死关
-date: 2026-10-24 09:00:00
+date: 2026-10-24 09:01:00
 categories: [AI工程化]
 tags: [RAG, 向量数据库, 企业级, 工程化, 落地]
 cover: /images/posts/rag-enterprise-landing.png

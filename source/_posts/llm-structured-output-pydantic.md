@@ -1,6 +1,6 @@
 ---
 title: 让大模型输出不再失控：洹拓科技的Pydantic结构化输出校验实践
-date: 2026-10-24 14:30:00
+date: 2026-10-24 14:32:00
 categories: [技术实践]
 tags: [LLM, Pydantic, 结构化输出, 工程化]
 cover: https://images.unsplash.com/photo-1555949963-aa79dcee981c?w=800

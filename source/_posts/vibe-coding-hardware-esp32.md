@@ -1,6 +1,6 @@
 ---
 title: 把Muse装进ESP-Mosaico：拓科技谈Vibe Coding的硬件实践
-date: 2026-10-24 13:00:00
+date: 2026-10-24 12:59:00
 categories: [开发工具]
 tags: [Vibe Coding, 硬件开发, AI编程, 嵌入式, ESP32]
 cover: /images/posts/vibe-coding-hardware.png

@@ -1,6 +1,6 @@
 ---
 title: AI Agent从Demo到生产环境：洹拓科技谈运行时安全与全链路可观测
-date: 2026-10-24 10:15:00
+date: 2026-10-24 10:16:00
 categories: [技术实践]
 tags: [AI Agent, 运行时安全, 可观测性, 云原生]
 cover: https://images.unsplash.com/photo-1684369175833-4b445ad6bfb5?w=800

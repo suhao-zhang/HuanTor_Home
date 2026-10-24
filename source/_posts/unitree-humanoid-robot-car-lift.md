@@ -1,6 +1,6 @@
 ---
 title: 宇树发布人形机器人徒手抬汽车：国产机器人技术突破背后的产业逻辑
-date: 2026-10-30 10:00:00
+date: 2026-10-24 17:41:00
 categories: [AI技术, 行业动态]
 tags: [宇树机器人, 人形机器人, 具身智能, 国产替代, 洹拓科技]
 cover: /images/posts/humanoid-robot-embodied-ai.png

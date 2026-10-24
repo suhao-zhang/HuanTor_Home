@@ -1,6 +1,6 @@
 ---
 title: LibrePods 开源项目解析：让 AirPods 在 Android 上全功能运行
-date: 2026-10-28 11:00:00
+date: 2026-10-24 14:28:00
 categories: [开发工具]
 tags: [LibrePods, 开源, Android, AirPods, 蓝牙, 逆向工程]
 cover: /images/posts/librepods-android-airpods.png

@@ -1,6 +1,6 @@
 ---
 title: AI 时代终端防拍照技术演进：从水印到实时拦截
-date: 2026-10-27 10:00:00
+date: 2026-10-24 12:12:00
 categories: [安全运维]
 tags: [数据安全, 防拍照, 水印溯源, 终端安全, AI应用]
 cover: /images/posts/anti-photo-capture-tech.png

@@ -1,6 +1,6 @@
 ---
 title: Avalonia 跨平台 UI 框架实战：从 3D 地球项目说起
-date: 2026-10-26 11:00:00
+date: 2026-10-24 10:49:00
 categories: [开发工具]
 tags: [Avalonia, 跨平台, C#, UI框架, 桌面开发, 3D]
 cover: /images/posts/avalonia-crossplatform-ui.png

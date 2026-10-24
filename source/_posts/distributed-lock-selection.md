@@ -1,6 +1,6 @@
 ---
 title: 库存扣减的"锁"事：拓科技谈悲观锁、乐观锁与分布式锁的选型
-date: 2026-10-24 10:30:00
+date: 2026-10-24 10:29:00
 categories: [后端架构]
 tags: [分布式锁, 并发控制, 数据库, 架构设计, 高并发]
 cover: /images/posts/distributed-lock-system.png

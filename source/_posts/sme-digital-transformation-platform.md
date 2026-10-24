@@ -1,6 +1,6 @@
 ---
 title: 中小企业数字化转型服务平台上线：政策红利怎么抓
-date: 2026-10-27 11:00:00
+date: 2026-10-24 12:39:00
 categories: [行业动态]
 tags: [中小企业, 数字化转型, 服务平台, 政策解读, 工信部]
 cover: /images/posts/sme-digital-transformation-platform.png

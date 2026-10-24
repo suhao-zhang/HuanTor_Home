@@ -1,6 +1,6 @@
 ---
 title: 5G 工厂名录遴选政策解读：制造企业如何抓住申报窗口
-date: 2026-10-28 09:00:00
+date: 2026-10-24 13:34:00
 categories: [行业动态]
 tags: [5G, 智能制造, 工厂, 政策解读, 工信部, 申报]
 cover: /images/posts/5g-factory-catalog-policy.png

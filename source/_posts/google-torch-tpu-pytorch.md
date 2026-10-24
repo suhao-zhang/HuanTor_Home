@@ -1,6 +1,6 @@
 ---
 title: Google开源TorchTPU：打破NVIDIA垄断的PyTorch加速方案深度解析
-date: 2026-10-29 10:00:00
+date: 2026-10-24 15:52:00
 categories: [AI技术, 开源框架]
 tags: [TorchTPU, Google开源, PyTorch, TPU加速, 洹拓科技]
 cover: /images/posts/google-torchtpu-open-source.png

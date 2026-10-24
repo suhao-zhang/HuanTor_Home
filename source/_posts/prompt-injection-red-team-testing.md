@@ -1,6 +1,6 @@
 ---
 title: 大模型应用上线前必做：Prompt 注入红队回归测试集建设
-date: 2026-10-27 09:00:00
+date: 2026-10-24 11:45:00
 categories: [AI安全]
 tags: [Prompt注入, 红队测试, AI安全, 大模型, 回归测试]
 cover: /images/posts/prompt-injection-red-team.png
