@@ -16,3 +16,9 @@ var analytics = theme.analytics || {};
 <script defer src='https://static.cloudflareinsights.com/beacon.min.js'
   data-cf-beacon='{"token": "<%= analytics.cloudflare %>"}'></script>
 <% } %>
+<% if (analytics.vercel) { %>
+<script>
+  window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
+</script>
+<script defer src="/_vercel/insights/script.js"></script>
+<% } %>
