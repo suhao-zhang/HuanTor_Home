@@ -11,7 +11,7 @@ preset: enterprise          # enterprise 商务蓝 / government 政务红 / educ
 # ------------------------------------------------------------
 brand:
   name: "新乡洹拓科技"
-  slogan: "本地商户数字化服务"
+  slogan: "AI 大模型研发 · 工业智能 · SaaS 与云服务"
   logo: ""                  # 主题自带 logo.svg 里写着 "Xongyi"，先只显示文字；做好自己的 logo 放到 source/images/ 后填 /images/logo-huantor.svg
   favicon: "/images/favicon.svg"
 
@@ -26,7 +26,7 @@ menu:
   - { name: "联系我们", url: "/contact/" }
 
 nav_button:
-  name: "商户咨询"
+  name: "技术咨询"
   url: "/contact/"
 
 # ------------------------------------------------------------
@@ -54,49 +54,49 @@ gallery:
 # ------------------------------------------------------------
 hero:
   badge: "新乡洹拓科技有限公司"
-  title: "让本地商户<br><em>收款更省心</em>"
-  subtitle: "立足辉县、服务新乡全域，把收款设备布放、支付渠道接入与软件系统开发放在同一条服务链上，本地团队直营、上门响应。"
+  title: "让大模型<br><em>真正落到产线上</em>"
+  subtitle: "我们从企业自己的数据和业务流程出发，做大模型应用研发、工业场景 AI 落地、软件与 SaaS 系统开发、云服务部署运维，以及面向 AI 搜索的 GEO 优化。"
   buttons:
-    - { name: "了解我们", url: "/about/", primary: true }
-    - { name: "业务咨询", url: "/contact/" }
-  image: "/images/hero.svg"   # 占位插图，建议后续换成门店实拍
+    - { name: "核心能力", url: "/products/", primary: true }
+    - { name: "技术咨询", url: "/contact/" }
+  image: "/images/hero.svg"   # 占位插图，建议后续换成产品界面或工业现场实拍
 
 # ------------------------------------------------------------
 # 快捷入口
 # ------------------------------------------------------------
 quicklinks:
   title: "快速通道"
-  subtitle: "常用入口一键直达"
+  subtitle: "从需求到交付，一键直达"
   items:
-    - { icon: "phone", name: "商户咨询", url: "/contact/" }
-    - { icon: "zap", name: "业务介绍", url: "/products/" }
-    - { icon: "file-text", name: "新闻动态", url: "/news/" }
-    - { icon: "message-circle", name: "合作洽谈", url: "/contact/" }
+    - { icon: "code", name: "大模型应用", url: "/products/" }
+    - { icon: "settings", name: "工业 AI", url: "/products/" }
+    - { icon: "search", name: "GEO 优化", url: "/products/" }
+    - { icon: "message-circle", name: "技术咨询", url: "/contact/" }
 
 # ------------------------------------------------------------
 # 核心业务
 # ------------------------------------------------------------
 services:
   title: "核心业务"
-  subtitle: "从一台设备到一套系统，本地团队一站对接"
+  subtitle: "从模型到系统，从上线到运营"
   items:
-    - { icon: "zap", title: "收款设备布放", desc: "支付宝「碰一下」等收款设备的选型、布放与现场调试。", url: "/products/" }
-    - { icon: "monitor", title: "聚合支付接入", desc: "为门店接入多种收款方式，统一对账，降低收银改造成本。", url: "/products/" }
-    - { icon: "code", title: "软件开发", desc: "小程序、管理后台与业务系统的定制开发与迭代维护。", url: "/products/" }
-    - { icon: "chart", title: "技术服务与咨询", desc: "技术方案、系统集成与信息技术咨询，覆盖上线前后全流程。", url: "/products/" }
-    - { icon: "shield-check", title: "商户运营支持", desc: "设备巡检、故障处理与门店使用培训，保障日常经营不中断。", url: "/products/" }
-    - { icon: "users", title: "本地化直营", desc: "需求沟通、现场实施、售后维护都在新乡，不外包、不转手。", url: "/contact/" }
+    - { icon: "zap", title: "AI 大模型研发", desc: "模型微调与推理部署、RAG 知识库、Agent 工作流，把大模型接进企业自有系统。", url: "/products/" }
+    - { icon: "settings", title: "AI 工业应用", desc: "工业视觉检测、设备数据分析与产线智能体，落到具体工序而非停留在演示。", url: "/products/" }
+    - { icon: "monitor", title: "软件开发", desc: "管理后台、小程序与业务系统的定制开发，按实际流程设计功能。", url: "/products/" }
+    - { icon: "cloud", title: "云服务", desc: "上云架构、容器化部署与运维托管，保障业务连续与成本可控。", url: "/products/" }
+    - { icon: "trending-up", title: "SaaS 产品与运营", desc: "SaaS 平台搭建、内容运营与经营数据看板，从交付走向长期增长。", url: "/products/" }
+    - { icon: "search", title: "GEO 生成式引擎优化", desc: "让品牌与产品在 AI 搜索、大模型回答中被检索、被引用、被推荐。", url: "/products/" }
 
 # ------------------------------------------------------------
-# 产品与案例（图为占位素材，建议换成真实项目截图）
+# 产品与案例（图为占位素材，建议换成真实产品界面或项目截图）
 # ------------------------------------------------------------
 products:
-  title: "产品与案例"
-  subtitle: "按门店实际经营场景组合交付"
+  title: "产品与方案"
+  subtitle: "按企业实际场景组合交付"
   items:
-    - { image: "/images/thumb-1.svg", title: "门店收款改造", desc: "从设备选型到收银动线的一站式改造方案。", url: "/products/", tags: ["收单", "门店"] }
-    - { image: "/images/thumb-2.svg", title: "小程序与线上商城", desc: "商品展示、线上下单与会员运营。", url: "/products/", tags: ["小程序", "互联网销售"] }
-    - { image: "/images/thumb-3.svg", title: "业务管理系统定制", desc: "按流程定制的后台管理与经营数据看板。", url: "/products/", tags: ["软件开发", "数据"] }
+    - { image: "/images/thumb-1.svg", title: "企业知识库与智能问答", desc: "把制度、工艺、售后文档变成可追问的问答与工单助手。", url: "/products/", tags: ["大模型", "RAG", "Agent"] }
+    - { image: "/images/thumb-2.svg", title: "工业视觉与设备数据平台", desc: "缺陷检测、参数寻优与产线看板，数据回流闭环。", url: "/products/", tags: ["工业 AI", "视觉", "数据"] }
+    - { image: "/images/thumb-3.svg", title: "SaaS 系统与 GEO 优化", desc: "业务系统 SaaS 化交付，配套内容运营与 AI 搜索可见性优化。", url: "/products/", tags: ["SaaS", "云服务", "GEO"] }
   link:
     name: "查看全部"
     url: "/products/"
@@ -105,26 +105,26 @@ products:
 # 新闻动态（自动取 source/_posts 下最新文章）
 # ------------------------------------------------------------
 news:
-  title: "新闻动态"
-  subtitle: "了解我们的最新进展"
+  title: "技术与行业动态"
+  subtitle: "我们对 AI 工程化落地的观察"
   count: 3
   more:
     name: "查看全部"
     url: "/news/"
 
 # ------------------------------------------------------------
-# 关于我们（不写成立年份、商户数等未经你确认的数字）
+# 关于我们（不写成立年份、团队规模、服务客户数等未经你确认的数字）
 # ------------------------------------------------------------
 about:
   title: "关于我们"
-  subtitle: "扎根辉县的本地数字化服务商"
+  subtitle: "把 AI 从演示做成生产力"
   image: "/images/about.svg"
   content: |
-    <p>新乡洹拓科技有限公司注册于河南省新乡市辉县市，是一家面向本地商户与机构的科技服务公司。我们把线下收款设备的选型布放、支付渠道接入和软件系统开发放在同一条服务链上，让商户不必在多个供应商之间来回协调。</p>
+    <p>新乡洹拓科技有限公司是一家 AI 应用与软件研发公司，注册于河南省新乡市。我们围绕企业自己的数据和业务流程做交付：大模型应用研发、工业场景 AI 落地、软件与 SaaS 系统开发、云服务部署运维，以及面向 AI 搜索的 GEO 优化。</p>
     <ul>
-      <li>本地团队直营，需求沟通与现场实施都在新乡完成</li>
-      <li>方案设计、设备布放、上线维护，全程同一批人对接</li>
-      <li>业务覆盖收款改造、软件开发与信息技术咨询</li>
+      <li>从场景梳理、方案设计到模型与系统落地，同一批人全程对接</li>
+      <li>交付可运行的系统，而不是停在演示的 Demo</li>
+      <li>上线后持续运营与优化，让数据回流到下一次迭代</li>
     </ul>
   link:
     name: "了解更多"
@@ -134,8 +134,8 @@ about:
 # 行动号召
 # ------------------------------------------------------------
 cta:
-  title: "有门店收款或系统开发的需求？"
-  subtitle: "致电 400-829-9957，或到金城百货四楼当面聊"
+  title: "有一个想用 AI 解决的业务问题？"
+  subtitle: "说清场景和数据现状，我们给可落地的方案与报价"
   button:
     name: "联系我们"
     url: "/contact/"
@@ -145,7 +145,7 @@ cta:
 # ------------------------------------------------------------
 contact:
   title: "联系我们"
-  subtitle: "欢迎来电或到店洽谈"
+  subtitle: "欢迎来电或预约面谈"
   address: "河南省新乡市辉县市金城百货四楼"
   phone: "400-829-9957"
   email: ""                   # 有对公邮箱再填
@@ -158,7 +158,7 @@ contact:
 # 页脚
 # ------------------------------------------------------------
 footer:
-  about: "新乡洹拓科技有限公司：本地商户收款设备布放、支付渠道接入与软件开发服务。"
+  about: "新乡洹拓科技有限公司：AI 大模型研发、工业 AI 应用、软件开发、云服务与 SaaS 运营、GEO 优化。"
   columns:
     - title: "快速导航"
       items:
@@ -179,18 +179,18 @@ footer:
 
 # 页脚社交/快捷图标。Hexo 的数组深合并只能改和追加、删不掉条目，
 # 所以这里按下标把主题自带的"作者邮箱 / Telegram / 作者博客"三个链接整体替换掉。
-# 有企业邮箱、公众号、企业微信二维码后再改 url。
+# 有企业邮箱、公众号后再改 url。
 social:
   - { icon: "phone", name: "电话咨询 400-829-9957", url: "tel:4008299957" }
-  - { icon: "map-pin", name: "到店洽谈：辉县市金城百货四楼", url: "/contact/" }
-  - { icon: "message-circle", name: "业务咨询与合作洽谈", url: "/contact/" }
+  - { icon: "map-pin", name: "公司地址：辉县市金城百货四楼", url: "/contact/" }
+  - { icon: "message-circle", name: "技术咨询与合作洽谈", url: "/contact/" }
 
 # ------------------------------------------------------------
 # SEO
 # ------------------------------------------------------------
 seo:
-  description: "新乡洹拓科技有限公司位于河南省新乡市辉县市，为本地商户提供收款设备布放、支付渠道接入、小程序与软件开发、信息技术咨询等服务。"
-  keywords: "新乡洹拓科技,辉县市洹拓科技,碰一下收款,支付宝收款设备,聚合支付,商户收单,新乡软件开发,新乡小程序开发"
+  description: "新乡洹拓科技有限公司：AI 大模型应用研发、工业 AI 与视觉检测、软件与 SaaS 系统开发、云服务部署运维、GEO 生成式引擎优化。"
+  keywords: "新乡洹拓科技,AI大模型应用,企业知识库RAG,工业视觉检测,AI工业应用,新乡软件开发,SaaS系统开发,云服务运维,GEO优化,生成式引擎优化"
   jsonld: true
 
 # ------------------------------------------------------------
