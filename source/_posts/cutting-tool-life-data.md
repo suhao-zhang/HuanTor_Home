@@ -1,7 +1,7 @@
 ---
 title: 刀具寿命别留在老师傅脑子里：切削参数的数字档案怎么建
-date: 2026-10-25 00:11:00
-updated: 2026-10-25 00:11:00
+date: 2026-10-24 22:31:00
+updated: 2026-10-24 22:31:00
 categories: [智能制造]
 tags: [MES, 刀具管理, 数控加工, 数据采集, 知识沉淀]
 cover: /images/posts/cutting-tool-life-data.png

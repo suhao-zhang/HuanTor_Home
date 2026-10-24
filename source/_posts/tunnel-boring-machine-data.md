@@ -1,7 +1,7 @@
 ---
 title: 盾构机国产化之后，装备厂要补的是掘进数据闭环
-date: 2026-10-25 00:04:00
-updated: 2026-10-25 00:04:00
+date: 2026-10-24 21:47:00
+updated: 2026-10-24 21:47:00
 categories: [智能制造]
 tags: [设备数据, 远程运维, 时序存储, 装备制造, 预测性维护]
 cover: /images/posts/tunnel-boring-machine-data.png
