@@ -3,7 +3,7 @@ title: Spring AI Alibaba多模态实践：洹拓科技的文生图、文生音�
 date: 2026-10-24 16:00:00
 categories: [技术实践]
 tags: [Spring AI, 多模态, 文生图, 向量化, Java]
-cover: https://img.alicdn.com/imgextra/i2/O1CN01bYc1m81RrcSAyOjMu_!!6000000002165-54-tps-60-60.apng
+cover: /images/thumb-1.svg
 excerpt: Spring AI Alibaba近期更新了文生图、文生音及向量化能力。洹拓科技Java技术团队第一时间进行了实践验证，分享多模态AI在企业级Java项目中的集成经验。
 ---
 

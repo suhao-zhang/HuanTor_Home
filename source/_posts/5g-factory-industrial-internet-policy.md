@@ -3,7 +3,7 @@ title: 工信部推进5G工厂与工业互联网：洹拓科技解读制造业�
 date: 2026-10-24 15:30:00
 categories: [行业动态]
 tags: [5G, 工业互联网, 数字化转型, 智能制造, 政策]
-cover: https://img.alicdn.com/imgextra/i2/O1CN01bYc1m81RrcSAyOjMu_!!6000000002165-54-tps-60-60.apng
+cover: /images/thumb-3.svg
 excerpt: 工信部近日发布2026年5G工厂名录遴选通知，并推进工业互联网一体化进园区"百城千园行"活动。洹拓科技从本地软件服务商的视角，解读这些政策对新乡制造业数字化的意义。
 ---
 
