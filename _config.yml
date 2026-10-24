@@ -13,7 +13,11 @@ timezone: 'Asia/Shanghai'
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
-url: https://suhao-zhang.github.io/HuanTor_Home/
+# 站点主域名（只用于 canonical / Open Graph / JSON-LD 等绝对地址）
+# 站内链接与资源一律走相对路径（见下面 relative_link: true），
+# 所以这份 public/ 挂到任何域名、任何子路径下都能正常显示。
+url: https://www.huant.ltd
+root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
 pretty_urls:
@@ -41,7 +45,7 @@ external_link:
 filename_case: 0
 render_drafts: false
 post_asset_folder: false
-relative_link: false
+relative_link: true # 站内链接与资源用相对路径，换域名/挂子路径都不用重新构建
 future: true
 syntax_highlighter: highlight.js
 highlight:
