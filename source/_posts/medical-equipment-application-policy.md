@@ -3,7 +3,7 @@ title: 高端医疗装备推广应用项目申报启动：医疗器械企业的�
 date: 2026-10-30 09:00:00
 categories: [政策解读, 医疗健康]
 tags: [高端医疗装备, 政策申报, 医疗器械, 数字化转型, 洹拓科技]
-cover: /images/posts/smart-healthcare-cloudq.png
+cover: /images/posts/smart-healthcare-ops.png
 excerpt: 工信部启动高端医疗装备推广应用项目申报工作，符合条件的医疗器械企业可获得政策支持。洹拓科技从软件开发和数字化服务角度，解读政策要点与申报策略。
 ---
 
