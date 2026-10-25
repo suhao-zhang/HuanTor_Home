@@ -18,7 +18,10 @@
     </div>
     <% if (theme.hero.image) { %>
     <div class="hero__media reveal">
-      <img src="<%- url_for(theme.hero.image) %>" alt="" loading="eager">
+      <%# ★ 本地改版（第 6 处主题补丁）：主题把 alt 写死成空串，配图对图片搜索与
+          AI 抓取等于不存在。改成读 hero.image_alt，没填则仍按装饰图输出 alt=""。
+          升级主题时这行要重做。 %>
+      <img src="<%- url_for(theme.hero.image) %>" alt="<%= theme.hero.image_alt || '' %>" loading="eager">
     </div>
     <% } %>
   </div>

@@ -156,10 +156,224 @@ article.page > .page-content { padding-top: 64px; }
   background: var(--primary-soft); border-radius: 999px; padding: 5px 13px; margin-bottom: 14px;
 }
 
+/* ---------- 新闻列表（/news/）横向卡 ----------
+   主题的三列竖卡一页只 260px 宽，标题两行、摘要一行，越看越挤。
+   改成一行一条：标题横跨整幅在上 → 配图左下、摘要在右 → 日期/分类/阅读全文压在
+   右列最底那一行，与配图底边对齐。
+   只命中 .page-content 里带 .ht-news 的页面（news.ejs 自己出的列表），
+   首页 section-news 仍是主题原版三列卡。 */
+.page-content:has(.ht-news) { max-width: var(--container); }
+.ht-news { display: flex; flex-direction: column; gap: 14px; }
+.ht-news__item {
+  display: flex; flex-direction: column; gap: 12px;
+  padding: 18px 22px; background: var(--surface);
+  border: 1px solid var(--border); border-radius: var(--radius);
+  box-shadow: var(--shadow-sm); transition: border-color .2s ease, box-shadow .2s ease;
+}
+.ht-news__item:hover { border-color: var(--primary); box-shadow: var(--shadow-md); }
+/* 标题与摘要都写成 .ht-news 前缀：主题的 .page-content h2 / .page-content p
+   是"标签+类"选择器（0,1,1），单类压不住，会被它塞进 24px 字号、34px 上边距
+   和一条 border-bottom，卡片就变成两条分隔线。 */
+.ht-news .ht-news__title { margin: 0; padding: 0; border: 0; font-size: 21px; line-height: 1.5; }
+.ht-news .ht-news__title a { color: var(--text); }
+.ht-news .ht-news__title a:hover { color: var(--primary); }
+.ht-news__main { display: grid; grid-template-columns: 260px minmax(0, 1fr); gap: 22px; align-items: stretch; }
+.ht-news__cover { display: block; aspect-ratio: 16 / 9; overflow: hidden; border-radius: 10px; background: var(--bg-tint); }
+.ht-news__cover img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform .45s cubic-bezier(.2,.7,.2,1); }
+.ht-news__item:hover .ht-news__cover img { transform: scale(1.05); }
+.ht-news__ph {
+  width: 100%; height: 100%; display: flex; align-items: center; justify-content: center;
+  font-size: 30px; color: var(--muted); background: linear-gradient(135deg, var(--primary-soft), var(--bg-tint));
+}
+.ht-news__text { display: flex; flex-direction: column; min-width: 0; }
+.ht-news .ht-news__desc {
+  margin: 0; color: var(--text-secondary); font-size: 14.5px; line-height: 1.85;
+  display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 3; overflow: hidden;
+}
+.ht-news__foot {
+  margin-top: auto; padding-top: 12px; border-top: 1px solid var(--border);
+  display: flex; align-items: center; gap: 18px; flex-wrap: wrap;
+}
+.ht-news__meta { display: inline-flex; align-items: center; gap: 5px; font-size: 13px; color: var(--muted); }
+.ht-news__more { margin-left: auto; display: inline-flex; align-items: center; gap: 5px; font-size: 14px; font-weight: 600; color: var(--primary); }
+.ht-news__more .icon { transition: transform .2s ease; }
+.ht-news__more:hover .icon { transform: translateX(4px); }
+/* 分页沿用主题的 .pagination / .pagination__item，这里只补两处主题没有的：
+   页码之间的省略号占位，和下面那行"第 N / M 页"的说明 */
+.ht-news__gap { font-size: 14px; color: var(--muted); margin: 0 -4px; }
+.page-content .ht-news__pager-info { text-align: center; margin: 14px 0 0; font-size: 13px; color: var(--muted); }
+
+/* ---------- 页脚列数自适应 ----------
+   主题把 .footer-main 写死成四列（品牌 + 两列链接 + 联系我们），
+   站点配置里追加了第三列「站点信息」，第五块（联系我们）就掉到第二行去了。
+   改成 flex 换行：品牌给两倍伸展权重、链接列一份、联系方式一份半，
+   以后加减列数不用再动 CSS，窄屏自己会折行。 */
+.footer-main { display: flex; flex-wrap: wrap; gap: 36px 32px; }
+.footer-main > .footer-brand { flex: 2 1 260px; }
+.footer-main > .footer-col { flex: 1 1 130px; }
+.footer-main > .footer-col:has(.footer-contact) { flex: 1.8 1 210px; }
+@media (max-width: 720px) {
+  .footer-main > .footer-brand, .footer-main > .footer-col { flex: 1 1 100%; }
+}
+
+/* ---------- 导航二级菜单（关于我们下拉） ----------
+   结构由主题 header.ejs 按 menu.children 渲染：li.menu-has-children > a + ul.sub-menu。
+   桌面靠 hover 与键盘 focus 展开；移动端抽屉里直接平铺展开，不玩折叠。 */
+.site-nav li { position: relative; }
+.menu-has-children > a { display: flex; align-items: center; }
+.menu-has-children > a .icon { margin-left: 5px; font-size: .78em; opacity: .75; transition: transform .2s ease; }
+.menu-has-children:hover > a .icon,
+.menu-has-children:focus-within > a .icon { transform: rotate(180deg); }
+/* 选择器一律带 .site-nav 前缀：主题的 `.site-nav ul { gap: 6px }` 是(0,1,1)，
+   单写 .sub-menu 只有(0,1,0)，压不住它，子项之间会被撑出 6px 缝 */
+.site-nav .sub-menu {
+  position: absolute; top: 100%; left: 0; z-index: 120;
+  min-width: 158px; padding: 7px; margin-top: 8px;
+  display: flex; flex-direction: column; gap: 2px;
+  background: var(--surface); border: 1px solid var(--border);
+  border-radius: 12px; box-shadow: var(--shadow-md);
+  opacity: 0; visibility: hidden; transform: translateY(6px);
+  transition: opacity .18s ease, transform .18s ease, visibility .18s ease;
+}
+/* 鼠标从一级项移到面板要穿过这 8px 空隙；用面板自己的伪元素把这段补成热区，
+   否则经过空隙时 li 失去 :hover，面板会在半路收起来 */
+.site-nav .sub-menu::before {
+  content: ""; position: absolute; left: 0; right: 0; top: -10px; height: 10px;
+}
+.menu-has-children:hover > .sub-menu,
+.menu-has-children:focus-within > .sub-menu { opacity: 1; visibility: visible; transform: none; }
+.site-nav .sub-menu a {
+  padding: 9px 12px; border-radius: 8px; font-size: 14.5px; white-space: nowrap;
+}
+/* 一级 + 二级菜单：悬浮与"当前项"都不要主题那层圆角底色，只留字色与字重。
+   选择器写成 `.site-nav ul a` 才压得住主题的 `.site-nav a:hover` / `.site-nav a.active`（同为 0,2,1 时靠注入顺序，多带一个元素选择器更稳）。 */
+.site-nav ul a:hover, .site-nav ul a.active { background: none; }
+.site-nav .sub-menu a:hover { color: var(--primary); }
+.site-nav .sub-menu a.active { font-weight: 600; }
+
+/* ---------- 关于我们子页共用的分段导航 ---------- */
+.ht-subnav {
+  display: flex; flex-wrap: wrap; gap: 8px;
+  margin: 0 0 40px; padding-bottom: 18px; border-bottom: 1px solid var(--border);
+}
+.ht-subnav a {
+  display: inline-flex; align-items: center; padding: 8px 16px; border-radius: 999px;
+  border: 1px solid var(--border); background: var(--surface);
+  color: var(--text-secondary); font-size: 14px; font-weight: 500;
+  transition: border-color .2s ease, color .2s ease, background .2s ease;
+}
+.ht-subnav a:hover { border-color: var(--primary); color: var(--primary); }
+.ht-subnav a.active {
+  border-color: var(--primary); background: var(--primary-soft);
+  color: var(--primary); font-weight: 600;
+}
+
+/* ---------- 组织架构图 ---------- */
+.ht-org { margin-top: 8px; text-align: center; }
+.ht-org__root { display: inline-block; position: relative; }
+.ht-org__root::after {
+  content: ""; position: absolute; left: 50%; bottom: -14px; width: 1px; height: 14px;
+  background: var(--border);
+}
+.ht-org__node {
+  position: relative; display: block; text-align: left;
+  padding: 16px 18px; background: var(--surface);
+  border: 1px solid var(--border); border-radius: var(--radius);
+  box-shadow: var(--shadow-sm); transition: border-color .2s ease, box-shadow .2s ease;
+}
+.ht-org__node:hover { border-color: var(--primary); box-shadow: var(--shadow-md); }
+.ht-org__node b { display: block; font-size: 16px; margin-bottom: 4px; color: var(--text); }
+.ht-org__node > span { display: block; font-size: 13.5px; color: var(--muted); line-height: 1.7; }
+.ht-org__node--root { border-color: var(--primary); }
+.ht-org__node--root b { color: var(--primary); }
+.ht-org__row { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 18px; margin-top: 28px; }
+/* 横线连四个竖头：第一/最后一列的竖头在列中心，即整行的 12.5% 与 87.5% */
+.ht-org__row::before {
+  content: ""; position: absolute; left: 12.5%; right: 12.5%; top: -14px;
+  border-top: 1px solid var(--border);
+}
+.ht-org__row { position: relative; }
+.ht-org__row .ht-org__node::before {
+  content: ""; position: absolute; left: 50%; top: -14px; height: 14px;
+  border-left: 1px solid var(--border);
+}
+.ht-org__duty { margin: 12px 0 0; padding: 0; list-style: none; border-top: 1px dashed var(--border); padding-top: 10px; }
+.ht-org__duty li { position: static; font-size: 13px; color: var(--text-secondary); line-height: 1.7; padding-left: 12px; margin-bottom: 4px; }
+.ht-org__duty li::before { content: ""; position: absolute; margin-left: -12px; margin-top: 8px; width: 5px; height: 5px; border-radius: 50%; background: var(--primary); }
+@media (max-width: 860px) {
+  .ht-org__row { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .ht-org__row::before, .ht-org__row .ht-org__node::before { display: none; }
+}
+@media (max-width: 560px) {
+  .ht-org__row { grid-template-columns: 1fr; }
+  .ht-org__root::after { display: none; }
+}
+
+/* ---------- 404 页（source/404.md） ---------- */
+.ht-404 { text-align: center; padding-top: 6px; }
+.ht-404__num {
+  font-size: clamp(92px, 17vw, 172px); font-weight: 800; line-height: .86; letter-spacing: -.05em;
+  color: var(--primary); background: linear-gradient(135deg, var(--primary), var(--accent));
+  -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent;
+}
+.ht-404__head { max-width: 740px; margin: 16px auto 0; }
+/* 终端卡片固定深色：浅色模式下它就该是个黑底终端，暗色模式也不冲突 */
+.ht-404__term {
+  max-width: 700px; margin: 30px auto 0; text-align: left; padding: 20px 22px;
+  border-radius: var(--radius); background: #0b1220; border: 1px solid rgba(255,255,255,.09);
+  box-shadow: var(--shadow-lg); color: #dbe7f5;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace;
+  font-size: 13.5px; line-height: 1.95;
+}
+.ht-404__term .t-mut { color: #8ba3c7; }
+.ht-404__term .t-err { color: #ff9c6b; font-weight: 600; }
+.ht-404__term .t-note { color: #6f8bb0; margin-top: 6px; }
+.ht-404__caret {
+  display: inline-block; width: 7px; height: 14px; margin-left: 5px; vertical-align: -2px;
+  background: #7ee7c8; animation: ht-blink 1.1s steps(1) infinite;
+}
+@keyframes ht-blink { 0%, 49% { opacity: 1; } 50%, 100% { opacity: 0; } }
+.ht-404__links { display: flex; flex-wrap: wrap; justify-content: center; gap: 14px; }
+.ht-404__prompt {
+  margin: 0 0 14px; padding: 14px 16px; font-size: 13.5px; line-height: 1.85;
+  color: var(--text-secondary); background: var(--bg-tint);
+  border: 1px dashed var(--border); border-radius: 10px;
+}
+.ht-404__note {
+  max-width: 780px; margin: 56px auto 0; padding: 18px 22px;
+  border-left: 3px solid var(--primary); background: var(--surface);
+  border-radius: 0 var(--radius) var(--radius) 0; box-shadow: var(--shadow-sm);
+}
+.ht-404__note p { margin: 0; color: var(--muted); font-size: 14.5px; line-height: 1.85; }
+@media (max-width: 560px) {
+  .ht-404__term { font-size: 12px; padding: 16px; line-height: 1.85; }
+  .ht-404__links .btn { flex: 1 1 46%; justify-content: center; padding: 11px 14px; font-size: 14px; }
+}
+
 /* ---------- 响应式 ---------- */
 @media (max-width: 1024px) {
   .ht-stats, .ht-scenes { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .ht-modes { grid-template-columns: 1fr; }
+}
+/* 窄屏放不下"图左 + 文右"两列，退回竖排：整幅配图在上、摘要与元信息在下 */
+@media (max-width: 860px) {
+  .ht-news__item { padding: 16px; }
+  .ht-news__main { grid-template-columns: 1fr; gap: 14px; }
+  .ht-news .ht-news__title { font-size: 18px; }
+  .ht-news .ht-news__desc { -webkit-line-clamp: 4; }
+
+  /* 移动端抽屉菜单：二级项直接平铺展开（抽屉里没有 hover），条目变多后允许滚动。
+     主题的抽屉断点也是 860px，这里跟它对齐。 */
+  .site-nav.is-open { max-height: 82vh; overflow-y: auto; }
+  .site-nav .sub-menu {
+    position: static; opacity: 1; visibility: visible; transform: none;
+    min-width: 0; margin: 0; padding: 0 0 8px 12px;
+    background: transparent; border: none; border-radius: 0; box-shadow: none; transition: none;
+  }
+  .site-nav .sub-menu::before { display: none; }
+  .site-nav .sub-menu a { padding: 10px 12px; font-size: 15px; border-radius: 0 8px 8px 0; border-left: 2px solid var(--border); }
+  .site-nav .sub-menu a.active { border-left-color: var(--primary); }
+  .menu-has-children > a .icon { display: none; }
 }
 @media (max-width: 720px) {
   .ht-stack { grid-template-columns: 1fr; }
@@ -172,4 +386,5 @@ article.page > .page-content { padding-top: 64px; }
   .ht-stagger > * { opacity: 1 !important; transform: none !important; transition: none !important; }
   .ht-media img, .ht-stat, .ht-scene, .ht-mode, .ht-chip { transition: none !important; }
   .ht-progress { display: none; }
+  .ht-404__caret { animation: none; }
 }

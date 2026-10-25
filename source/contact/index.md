@@ -1,8 +1,17 @@
 ---
 title: 联系我们
 subtitle: 说清场景和数据现状，我们给可落地的方案
+description: "联系新乡洹拓科技有限公司：电话 400-829-9957，地址河南省新乡市辉县市金城百货四楼，工作日 9:00 至 18:00。面谈前建议先说明业务场景、现有系统与数据现状，我们据此给出可落地的方案与分项报价，不做无凭据的效果承诺，也可在表单留言注明咨询方向。"
 date: 2026-10-24 08:50:00
 ---
+
+<nav class="ht-subnav" aria-label="关于我们">
+  <a href="../about/">公司介绍</a>
+  <a href="../about/organization/">组织架构</a>
+  <a href="../about/history/">发展历程</a>
+  <a href="../about/careers/">加入我们</a>
+  <a href="./" class="active">联系我们</a>
+</nav>
 
 <div class="section-head section-head--left">
   <h1>联系我们</h1>

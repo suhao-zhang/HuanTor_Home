@@ -111,6 +111,46 @@
 })();
 
 /* ------------------------------------------------------------------
+ * 404 页两件小事（只在有对应元素时生效，其它页面零开销）
+ *  1) 把访客真正要找的地址回填进那张终端卡片。线上 Vercel 是用 404.html 兜底，
+ *     浏览器地址栏就是那个不存在的路径，所以能直接显示；本地 hexo server 打开
+ *     /404.html 时显示的就是 /404.html 本身，属正常。
+ *  2) "复制这段提问"按钮：把那段写给 AI 的提示词复制到剪贴板。
+ *     clipboard API 只在安全上下文可用（https 与 localhost），失败就退回提示手动选中，
+ *     绝不静默——按钮文案会告诉你成没成。
+ * ---------------------------------------------------------------- */
+(function () {
+  'use strict';
+  function ready(fn) {
+    if (document.readyState !== 'loading') fn();
+    else document.addEventListener('DOMContentLoaded', fn);
+  }
+
+  ready(function () {
+    var slot = document.querySelector('[data-404-path]');
+    if (slot && location.pathname && location.pathname !== '/404.html') {
+      slot.textContent = decodeURIComponent(location.pathname);
+    }
+
+    var btn = document.querySelector('[data-404-copy]');
+    if (!btn) return;
+    var label = btn.querySelector('span') || btn;
+    btn.addEventListener('click', function () {
+      var src = document.getElementById(btn.getAttribute('data-404-copy'));
+      var text = src ? src.textContent.trim() : '';
+      var done = function (ok) {
+        label.textContent = ok ? '已复制，去粘给 AI' : '复制没成功，请手动选中这段文字';
+        if (window.umami && window.umami.track) {
+          window.umami.track('404复制提问', { 成功: ok ? '是' : '否' });
+        }
+      };
+      if (!text || !navigator.clipboard || !navigator.clipboard.writeText) { done(false); return; }
+      navigator.clipboard.writeText(text).then(function () { done(true); }, function () { done(false); });
+    });
+  });
+})();
+
+/* ------------------------------------------------------------------
  * 转化事件上报（Umami）：页面 PV 由采集脚本自己发，这里只补三类"动作"。
  * - 点电话 / 点邮箱：官网最该看的转化，直接对应询盘
  * - 点联系方式旁边的二维码图：说明有人在扫码加微信，也算询盘

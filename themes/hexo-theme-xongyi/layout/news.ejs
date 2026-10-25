@@ -1,10 +1,99 @@
-<%# layout: news 页面 — 全部文章列表 %>
+<%#
+  layout: news 页面 — 全部文章列表
+  ★ 本地改版（第 4 处主题补丁）：主题的 _partial/post-grid 是三列竖卡，
+    一卡只有 260px 宽，标题两行、摘要一行，而且它把 site.posts 整个 forEach 出来，
+    500+ 篇一次性铺在一页（1.1MB HTML、几万像素高）。
+    这里改成一行一条的横向卡 + 真分页：
+      标题横跨整幅在上 → 配图左下、摘要在右 → 日期 / 分类 / 阅读全文压在右下那一行
+    第 1 页仍由 source/news/index.md 渲染，第 2 页起由 scripts/news-pagination.js 出路由；
+    每页条数读 news.per_page（_config.hexo-theme-xongyi.yml）。
+    配套样式在 source/css/site.css 的「新闻列表」段。升级主题时这个文件会被覆盖，要重做。
+    首页 section-news 仍用主题原版的三列卡，不受影响。
+%>
+<%
+var PER = (theme.news && theme.news.per_page) || 12;   // 与 scripts/news-pagination.js 同一个配置
+var all = site.posts.sort('date', -1);
+var current = page.news_page || 1;                     // 源文件那份没有这个字段 = 第 1 页
+var total = Math.ceil(all.length / PER);
+if (current > total) current = total;                  // 文章删减后旧链接不至于出空页
+var slice = all.slice((current - 1) * PER, current * PER);
+
+// 分页链接：第 1 页回到 /news/，其余是 /news/page/N/
+function pageUrl(n) { return n <= 1 ? 'news/' : 'news/page/' + n + '/'; }
+
+// 页码窗口：首页、当前页左右各一格、末页，中间断开处补省略号
+function pageList(cur, tot) {
+  var picked = [];
+  [1, cur - 1, cur, cur + 1, tot].forEach(function (n) {
+    if (n >= 1 && n <= tot && picked.indexOf(n) === -1) picked.push(n);
+  });
+  picked.sort(function (a, b) { return a - b; });
+  var out = [];
+  picked.forEach(function (n, i) {
+    if (i && n - picked[i - 1] > 1) out.push('gap');
+    out.push(n);
+  });
+  return out;
+}
+var pages = pageList(current, total);
+%>
 <section class="page-hero">
   <div class="container">
     <h1><%= page.title %></h1>
-    <% if (page.subtitle) { %><p class="page-hero__subtitle"><%= page.subtitle %></p><% } %>
+    <p class="page-hero__subtitle"><%= page.subtitle || '全部文章列表' %> · 共 <%= all.length %> 篇</p>
   </div>
 </section>
 <div class="container page-content">
-  <%- partial('_partial/post-grid', { posts: site.posts.sort('date', -1) }) %>
+  <% if (!slice.length) { %>
+  <p class="empty-tip"><%= __('no_posts') %></p>
+  <% } else { %>
+  <div class="ht-news">
+    <% slice.forEach(function (post) {
+         var desc = post.excerpt ? strip_html(post.excerpt).trim() : strip_html(post.content || '').trim();
+         desc = desc.substring(0, 150) + (desc.length > 150 ? '…' : '');
+    %>
+    <article class="ht-news__item">
+      <h2 class="ht-news__title"><a href="<%- url_for(post.path) %>"><%= post.title %></a></h2>
+      <div class="ht-news__main">
+        <a class="ht-news__cover" href="<%- url_for(post.path) %>">
+          <% if (post.cover) { %>
+          <img src="<%- url_for(post.cover) %>" alt="<%= post.title %>" loading="lazy">
+          <% } else { %>
+          <span class="ht-news__ph"><%- icon('image') %></span>
+          <% } %>
+        </a>
+        <div class="ht-news__text">
+          <% if (desc) { %><p class="ht-news__desc"><%= desc %></p><% } %>
+          <div class="ht-news__foot">
+            <span class="ht-news__meta"><%- icon('calendar') %><%= date(post.date, 'YYYY-MM-DD') %></span>
+            <% if (post.categories && post.categories.length) { %>
+            <span class="ht-news__meta"><%- icon('folder') %><%= post.categories.first().name %></span>
+            <% } %>
+            <a class="ht-news__more" href="<%- url_for(post.path) %>"><%= __('read_more') %><%- icon('arrow-right') %></a>
+          </div>
+        </div>
+      </div>
+    </article>
+    <% }) %>
+  </div>
+  <% if (total > 1) { %>
+  <nav class="pagination ht-news__pager" aria-label="文章列表分页">
+    <% if (current > 1) { %>
+    <a class="pagination__item" href="<%- url_for(pageUrl(current - 1)) %>"><%- icon('arrow-left') %>上一页</a>
+    <% } %>
+    <% pages.forEach(function (p) {
+         if (p === 'gap') { %>
+    <span class="ht-news__gap" aria-hidden="true">…</span>
+    <% } else if (p === current) { %>
+    <span class="pagination__item pagination__current" aria-current="page"><%= p %></span>
+    <% } else { %>
+    <a class="pagination__item" href="<%- url_for(pageUrl(p)) %>"><%= p %></a>
+    <% } }) %>
+    <% if (current < total) { %>
+    <a class="pagination__item" href="<%- url_for(pageUrl(current + 1)) %>">下一页<%- icon('arrow-right') %></a>
+    <% } %>
+  </nav>
+  <p class="ht-news__pager-info">第 <%= current %> / <%= total %> 页 · 每页 <%= PER %> 篇 · 共 <%= all.length %> 篇</p>
+  <% } %>
+  <% } %>
 </div>

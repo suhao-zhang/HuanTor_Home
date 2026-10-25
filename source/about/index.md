@@ -1,8 +1,17 @@
 ---
-title: 关于我们
+title: 公司介绍
 subtitle: 把 AI 从演示做成生产力
+description: "新乡洹拓科技有限公司介绍：我们是谁、把 AI 从演示做成生产力具体指什么，六个业务方向的能力矩阵与技术栈清单，一个项目从需求诊断、方案设计、开发部署到运营迭代的四个阶段，能落地的场景类型、三种合作方式与常见问题。适合想先弄清我们怎么干活、再看头衔的客户。"
 date: 2026-10-24 08:50:00
 ---
+
+<nav class="ht-subnav" aria-label="关于我们">
+  <a href="./" class="active">公司介绍</a>
+  <a href="organization/">组织架构</a>
+  <a href="history/">发展历程</a>
+  <a href="careers/">加入我们</a>
+  <a href="../contact/">联系我们</a>
+</nav>
 
 <div class="about__inner">
   <div class="about__media ht-media">

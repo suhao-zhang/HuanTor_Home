@@ -18,7 +18,14 @@ function prefixOf(routePath) {
 hexo.extend.filter.register('after_render:html', function (str, data) {
   if (typeof str !== 'string' || str.indexOf('</head>') === -1) return str;
 
-  const prefix = prefixOf(data.path || 'index.html');
+  // 404.html 特殊处理：线上（Vercel）是拿它兜底任意不存在的路径，浏览器地址可能是
+  // /foo/bar/ 这种深层地址，而站内所有链接与资源都是 relative_link 生成的相对路径
+  // （css/site.css、../images/logo.png）。相对路径会按"当前地址"解析，
+  // 于是 /foo/bar/css/site.css 全部 404，兜底页变成没样式的裸 HTML。
+  // 所以这一页的资源一律改成根绝对路径，跟访客从哪个路径进来都无关。
+  const routePath = data.path || 'index.html';
+  const is404 = routePath === '404.html';
+  const prefix = is404 ? '/' : prefixOf(routePath);
   let out = str;
 
   if (out.indexOf('css/site.css') === -1) {
@@ -29,6 +36,15 @@ hexo.extend.filter.register('after_render:html', function (str, data) {
   if (out.indexOf('js/site.js') === -1 && /<\/body>/i.test(out)) {
     out = out.replace(/<\/body>/i,
       '  <script src="' + prefix + 'js/site.js" defer></script>\n</body>');
+  }
+
+  if (is404) {
+    // 主题自己输出的 href/src 也是相对的，一并转成根绝对；
+    // 已经是绝对地址、协议相对、锚点、mailto/tel/data: 的一律不动
+    out = out.replace(/\b(href|src)="(?!\/|#|https?:|mailto:|tel:|data:)([^"]+)"/g,
+      function (m, attr, val) {
+        return attr + '="/' + val.replace(/^(?:\.\.\/|\.\/)+/, '') + '"';
+      });
   }
 
   // 主题的 head.ejs 把 favicon 的 type 写死成 image/svg+xml；换成 PNG 图标时
