@@ -6,10 +6,11 @@ date: 2026-10-26 03:07:00
 ---
 
 <nav class="ht-subnav" aria-label="About us">
-  <a href="../">Company Profile</a>
-  <a href="../services/">Products &amp; Capabilities</a>
-  <a href="./" class="active">Contact</a>
-  <a href="/contact/">中文</a>
+  <a href="/en/">Company Profile</a>
+  <a href="/en/organization/">Organisation</a>
+  <a href="/en/history/">History</a>
+  <a href="/en/careers/">Careers</a>
+  <a href="/en/contact/" class="active">Contact</a>
 </nav>
 
 <div class="section-head section-head--left">

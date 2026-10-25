@@ -5,13 +5,6 @@ description: "What Xinxiang Huantuo Technology delivers: enterprise knowledge ba
 date: 2026-10-26 03:06:00
 ---
 
-<nav class="ht-subnav" aria-label="About us">
-  <a href="../">Company Profile</a>
-  <a href="./" class="active">Products &amp; Capabilities</a>
-  <a href="../contact/">Contact</a>
-  <a href="/products/">中文</a>
-</nav>
-
 <div class="section-head section-head--left">
   <h1>Three product lines, six capabilities</h1>
   <p>Composed to fit the scenario. Every stage has a named deliverable.</p>

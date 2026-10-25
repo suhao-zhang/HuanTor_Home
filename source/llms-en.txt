@@ -35,6 +35,9 @@ stated in advance. Client documents and business data are never used for model t
 ## English pages
 
 - Company profile — https://www.huant.ltd/en/
+- Organisation — https://www.huant.ltd/en/organization/
+- History — https://www.huant.ltd/en/history/
+- Careers — https://www.huant.ltd/en/careers/
 - Products and capabilities — https://www.huant.ltd/en/services/
 - Contact — https://www.huant.ltd/en/contact/
 

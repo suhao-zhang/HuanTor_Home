@@ -29,10 +29,30 @@
 const PAIRS = {
   'about/index.html': 'en/index.html',
   'en/index.html': 'about/index.html',
+  'about/organization/index.html': 'en/organization/index.html',
+  'en/organization/index.html': 'about/organization/index.html',
+  'about/history/index.html': 'en/history/index.html',
+  'en/history/index.html': 'about/history/index.html',
+  'about/careers/index.html': 'en/careers/index.html',
+  'en/careers/index.html': 'about/careers/index.html',
   'products/index.html': 'en/services/index.html',
   'en/services/index.html': 'products/index.html',
   'contact/index.html': 'en/contact/index.html',
   'en/contact/index.html': 'contact/index.html'
+};
+
+/* 英文页的导航与页脚：标签已经换成英文了，链接却还指着中文页（../about/organization/ 这种），
+   英文读者点 Organisation 会落到中文站。这张表把有英文对应页的链接改指过去，
+   并统一成根绝对路径——英文页可能挂在任意深度，相对路径在这里最容易出错。
+   没有英文版的目标（news / archives / tech / sitemap / atom / robots / llms）保持原样，
+   它们本来就是中文内容，指过去比放一个空英文壳诚实。 */
+const EN_HREF = {
+  'about/': 'en/',
+  'about/organization/': 'en/organization/',
+  'about/history/': 'en/history/',
+  'about/careers/': 'en/careers/',
+  'products/': 'en/services/',
+  'contact/': 'en/contact/'
 };
 
 const BRAND_CN = '新乡洹拓科技有限公司';
@@ -119,10 +139,26 @@ function swapBrand(html) {
   return html.split(BRAND_CN).join(BRAND_EN).split(BRAND_SHORT_CN).join(BRAND_SHORT_EN);
 }
 
-function langSwitch(isEn) {
-  return isEn
-    ? '<a class="ht-lang-switch" href="/" hreflang="zh-CN" title="切换到中文">中文</a>'
-    : '<a class="ht-lang-switch" href="/en/" hreflang="en" title="Switch to English">EN</a>';
+// 英文页导航/页脚里的链接：把有英文对应页的那几个改指过去
+function toRoot(href) {
+  return String(href).replace(/^(?:\.\.\/|\.\/|\/)+/, '');
+}
+
+function rewriteHrefs(html) {
+  return html.replace(/href="([^"]+)"/g, function (m, href) {
+    if (/^(https?:|mailto:|tel:|data:|#)/.test(href)) return m;
+    const mapped = EN_HREF[toRoot(href)];
+    return mapped ? 'href="/' + mapped + '"' : m;
+  });
+}
+
+function langSwitch(isEn, routePath) {
+  if (!isEn) {
+    return '<a class="ht-lang-switch" href="/en/" hreflang="en" title="Switch to English">EN</a>';
+  }
+  const mate = PAIRS[routePath];
+  const href = mate ? '/' + mate.replace(/index\.html$/, '') : '/';
+  return '<a class="ht-lang-switch" href="' + href + '" hreflang="zh-CN" title="切换到中文">中文</a>';
 }
 
 function hreflangTags(routePath) {
@@ -169,42 +205,45 @@ hexo.extend.filter.register('after_render:html', function (str, data) {
   const isEn = routePath.indexOf('en/') === 0;
   let out = str;
 
-  /* 1) 语言切换：优先插在暗色开关前，其次 CTA 前，最后汉堡按钮前 */
-  const tag = '  ' + langSwitch(isEn) + '\n';
+  if (isEn) {
+    /* 1) head：关键词换英文、结构化数据里的公司名与描述换英文、品牌全称/简称统一 */
+    const doc = docOf(routePath);
+    const enDesc = doc && doc.description ? String(doc.description) : '';
+    out = out.replace(/<head>[\s\S]*?<\/head>/, function (m) {
+      let h = m;
+      h = h.replace(/<meta name="keywords" content="[^"]*"/, '<meta name="keywords" content="' + KEYWORDS_EN + '"');
+      if (enDesc) h = h.replace(/("description":\s*)"[^"]*"/, function (mm, a) { return a + JSON.stringify(enDesc); });
+      // seo.js 生成的面包屑根节点写死是"首页"
+      h = h.replace(/("name":\s*)"首页"/g, '$1"Home"');
+      h = swapBrand(h);
+      return h;
+    });
+
+    /* 2) header 与 footer：文字换英文、有对应页的链接改指英文页（正文一律不动）。
+          必须在注入语言切换按钮之前做完——切换按钮本身就在 header 里，
+          它指的中文页 /about/organization/ 会被 rewriteHrefs 当成普通链接改回英文页，
+          结果英文页上的"中文"按钮点回英文页自己。 */
+    out = out.replace(/<header[\s\S]*?<\/header>/, function (m) {
+      return rewriteHrefs(swapBrand(mapAttrs(mapText(m, HEADER_MAP))));
+    });
+    out = out.replace(/<footer[\s\S]*?<\/footer>/, function (m) {
+      return rewriteHrefs(swapBrand(mapAttrs(mapText(m.split(COPYRIGHT_CN).join(COPYRIGHT_EN), FOOTER_MAP))));
+    });
+    out = out.replace(/(<a class="skip-link" href="#main">)([^<]*)(<\/a>)/, function (m, a, t, c) {
+      return a + (ATTR_MAP[t.trim()] || t) + c;
+    });
+    out = out.replace(/>豫ICP备2025140588号<\/a>/, '>豫ICP备2025140588号 (ICP filing)</a>');
+  }
+
+  /* 3) 语言切换：优先插在暗色开关前，其次 CTA 前，最后汉堡按钮前 */
+  const tag = '  ' + langSwitch(isEn, routePath) + '\n';
   if (/<button id="theme-toggle"/.test(out)) out = out.replace(/(\s*)(<button id="theme-toggle")/, '\n' + tag.trimEnd() + '$1$2');
   else if (/<a class="btn [^"]*nav-cta"/.test(out)) out = out.replace(/(\s*)(<a class="btn [^"]*nav-cta")/, '\n' + tag.trimEnd() + '$1$2');
   else out = out.replace(/(\s*)(<button id="nav-toggle")/, '\n' + tag.trimEnd() + '$1$2');
 
-  /* 2) hreflang 与 og:locale */
+  /* 4) hreflang 与 og:locale */
   const alt = hreflangTags(routePath);
   if (alt) out = out.replace(/<\/head>/, '  ' + alt + '\n</head>');
-
-  if (!isEn) return out;
-
-  /* 3) head：关键词换英文、结构化数据里的公司名与描述换英文、品牌全称/简称统一 */
-  const doc = docOf(routePath);
-  const enDesc = doc && doc.description ? String(doc.description) : '';
-  out = out.replace(/<head>[\s\S]*?<\/head>/, function (m) {
-    let h = m;
-    h = h.replace(/<meta name="keywords" content="[^"]*"/, '<meta name="keywords" content="' + KEYWORDS_EN + '"');
-    if (enDesc) h = h.replace(/("description":\s*)"[^"]*"/, function (mm, a) { return a + JSON.stringify(enDesc); });
-    // seo.js 生成的面包屑根节点写死是"首页"
-    h = h.replace(/("name":\s*)"首页"/g, '$1"Home"');
-    h = swapBrand(h);
-    return h;
-  });
-
-  /* 4) header 与 footer：文字换英文（正文一律不动） */
-  out = out.replace(/<header[\s\S]*?<\/header>/, function (m) {
-    return swapBrand(mapAttrs(mapText(m, HEADER_MAP)));
-  });
-  out = out.replace(/<footer[\s\S]*?<\/footer>/, function (m) {
-    return swapBrand(mapAttrs(mapText(m.split(COPYRIGHT_CN).join(COPYRIGHT_EN), FOOTER_MAP)));
-  });
-  out = out.replace(/(<a class="skip-link" href="#main">)([^<]*)(<\/a>)/, function (m, a, t, c) {
-    return a + (ATTR_MAP[t.trim()] || t) + c;
-  });
-  out = out.replace(/>豫ICP备2025140588号<\/a>/, '>豫ICP备2025140588号 (ICP filing)</a>');
 
   return out;
 }, 30);
