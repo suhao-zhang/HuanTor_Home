@@ -61,12 +61,47 @@ function fmRobots(routePath) {
   return hit;
 }
 
+/* 薄列表页：只有 1–2 篇文章的标签页/分类页，内容和那篇文章本身几乎完全重复，
+   2120 个标签页里有 1808 个是单篇、205 个两篇。这类页面进索引就是典型的薄页/门页。
+   阈值取 _config.yml 的 sitemap.thin_list_below（默认 3，即少于 3 篇就 noindex；填 0 关闭）。
+   同一个键也被 sitemap-template.xml.tpl 用去把薄页从 sitemap.xml 里剔除——
+   页面说 noindex、清单又递上去是自相矛盾，所以两处必须共用一个开关。 */
+function thinThreshold() {
+  const v = parseInt((hexo.config.sitemap || {}).thin_list_below, 10);
+  return isNaN(v) ? 3 : v;
+}
+
+/* 按路由路径找标签/分类对象并取它的文章数。
+   注意必须比 tag.path（slug 化的目录，如 tags/A-B-测试/），不能拿目录名去对 tag.name——
+   名字里带 / 或空格的标签，slug 会被 slugize 改成 '-'，按名字查就查不到，
+   结果是"模板把它从 sitemap 剔了、脚本却给它 index,follow"两边不一致（实测 39 个）。 */
+function listCount(routePath) {
+  const dir = routePath.replace(/index\.html$/, '');
+  if (!/^(tags|categories)\//.test(dir)) return -1;
+  let count = -1;
+  ['tags', 'categories'].forEach(function (key) {
+    const col = hexo.locals.get(key);
+    if (!col || typeof col.each !== 'function' || count >= 0) return;
+    col.each(function (t) {
+      if (t.path === dir && t.posts) count = t.posts.length;
+    });
+  });
+  return count;
+}
+
+function isThin(routePath) {
+  const min = thinThreshold();
+  if (min <= 0) return false;
+  const n = listCount(routePath);
+  return n >= 0 && n < min;
+}
+
 hexo.extend.filter.register('after_render:html', function (str, data) {
   if (typeof str !== 'string' || /<meta[^>]+name=["']robots["']/i.test(str)) return str;
 
   const routePath = String((data && data.path) || 'index.html');
   const custom = fmRobots(routePath);
-  const content = custom || (isDuplicate(routePath) ? NOINDEX : INDEX);
+  const content = custom || (isDuplicate(routePath) || isThin(routePath) ? NOINDEX : INDEX);
   const line = '<meta name="robots" content="' + content + '">';
 
   // 优先插在 canonical 前面（同一缩进），没有 canonical 就插到 </head> 前

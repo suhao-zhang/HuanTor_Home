@@ -76,8 +76,13 @@ index_generator:
 
 # Category & Tag
 default_category: uncategorized
-category_map:
+# C# 与 C++ 两个标签经 slugize 后都变成 tags/C/，两页互相覆盖（一个 3 篇、一个 1 篇，
+# 产物里只剩后写入的那份），也让 robots 与 sitemap 的判定对不上。
+# 用 tag_map 给它们各定一个不冲突的 slug 即可，标签在页面上显示的还是原名。
 tag_map:
+  "C#": "C-Sharp"
+  "C++": "C-Plus-Plus"
+category_map:
 
 # Metadata elements
 ## https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meta
@@ -115,12 +120,16 @@ deploy:
 
 # SEO —— 网站地图与订阅源
 # 由 hexo-generator-sitemap / hexo-generator-feed 生成
+# template 指向项目根目录的自建模板：与官方默认模板唯一差别是
+# 文章数少于 thin_list_below 的标签页/分类页不写进清单（与 robots meta 共用这个阈值）。
 sitemap:
   path: sitemap.xml
+  template: sitemap-template.xml.tpl
   rel: false
   tags: true
   categories: true
   sort_maps: true
   sort_field: date
   sort_order: -1
+  thin_list_below: 3      # 0 = 关闭薄页策略，标签分类全部照常收录
 
