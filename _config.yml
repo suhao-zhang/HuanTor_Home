@@ -65,9 +65,13 @@ prismjs:
 # path: Root path for your blogs index page. (default = '')
 # per_page: Posts displayed per page. (0 = disable pagination)
 # order_by: Posts order. (Order by date descending by default)
+# 主题首页是企业落地页（hero/services/products/news 这些 section 拼出来的），不是文章列表，
+# 开着分页只会多出 /page/2/ … /page/55/ 这 55 份与首页几乎逐字节相同的副本，
+# 而站内没有任何入口链到它们。上一轮已用 robots meta 压成 noindex，这里直接关掉分页。
+# 以后若把首页换成真正的文章列表，记得把这个值改回每页条数（原来是 10）。
 index_generator:
   path: ''
-  per_page: 10
+  per_page: 0
   order_by: -date
 
 # Category & Tag
