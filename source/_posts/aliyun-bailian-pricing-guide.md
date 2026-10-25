@@ -1,5 +1,5 @@
 ---
-title: 阿里云百炼计费策略详解：TokenPlan、CodingPlan还是按量付费？
+title: 阿里云百炼计费策略详解：TokenPlan、CodingPlan还是按量付费？｜洹拓科技
 date: 2026-08-27 12:21:00
 updated: 2026-08-27 12:21:00
 categories: [云服务]
@@ -11,6 +11,8 @@ excerpt: 三种计费方式各有适用场景，选错了可能多花三倍钱�
 阿里云百炼是洹拓科技为客户部署 AI 应用时最常用的大模型平台之一。但很多客户在接入时都会问一个问题：按量付费、TokenPlan、CodingPlan，到底选哪个？
 
 答案是：看场景。选错了，成本可能差三倍以上。今天我们把三种计费方式彻底拆开，帮你算清这笔账。
+
+![三种计费方式各有适用场景、选错了可能多花三倍钱要点示意](/images/posts/aliyun-bailian-pricing.png)
 
 ## 三种计费方式概览
 

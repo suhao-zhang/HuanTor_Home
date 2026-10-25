@@ -1,5 +1,5 @@
 ---
-title: Agent 行为评估新范式：用 Trajectory 断言替代结果校验
+title: Agent 行为评估新范式：用 Trajectory 断言替代结果校验｜洹拓科技
 date: 2026-09-17 13:37:00
 updated: 2026-09-17 13:37:00
 categories: [AI测试]
@@ -11,6 +11,8 @@ excerpt: 只断言最终结果等于放弃中间可测性。洹拓科技分享�
 很多团队在测试 AI Agent 时，只关注"最终结果是否正确"。但洹拓科技在为新乡企业做 Agent 系统测试时，发现一个严重问题：结果正确不代表过程正确，Agent 可能在中间步骤犯了错，只是运气好最终结果对了。
 
 今天分享我们如何用 Trajectory 断言，实现对 Agent 行为的全过程测试。
+
+![只断言最终结果等于放弃中间可测性要点示意](/images/posts/agent-trajectory-evaluation.png)
 
 ## 为什么结果校验不够
 

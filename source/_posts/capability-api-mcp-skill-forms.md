@@ -1,5 +1,5 @@
 ---
-title: 同一个搜索能力开成三种接口：API、MCP 与 Skill 的分工在哪
+title: 同一个搜索能力开成三种接口：API、MCP 与 Skill 的分工在哪｜洹拓科技
 date: 2026-10-21 09:35:00
 updated: 2026-10-21 09:35:00
 categories: [后端架构]

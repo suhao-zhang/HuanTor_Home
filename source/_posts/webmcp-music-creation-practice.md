@@ -1,5 +1,5 @@
 ---
-title: WebMCP 实战：让 AI 在网页里创作音乐
+title: WebMCP 实战：让 AI 在网页里创作音乐｜洹拓科技
 date: 2026-08-26 10:07:00
 updated: 2026-08-26 10:07:00
 categories: [AI创意应用]
@@ -11,6 +11,8 @@ excerpt: 接入真实DeepSeek API，在浏览器里实现AI音乐创作。洹拓
 MCP（Model Context Protocol）协议最近很火，但大多数应用还停留在"让 AI 读写文件"的阶段。今天洹拓科技分享一个更有趣的场景：用 WebMCP 让 AI 在网页里创作音乐。
 
 这个想法来自我们为新乡某音乐培训机构做线上教学平台时的需求——能不能让 AI 根据学生的演奏水平，自动生成配套练习曲目？答案是：可以，而且效果不错。
+
+![接入真实DeepSeek API要点示意](/images/posts/webmcp-music-creation.png)
 
 ## 什么是 WebMCP
 

@@ -1,5 +1,5 @@
 ---
-title: TypeScript-Go编译器引发热议：有人用C#重写，跨语言工具链的生态博弈
+title: TypeScript-Go编译器引发热议：有人用C#重写，跨语言工具链的生态博弈｜洹拓科技
 date: 2026-10-07 13:46:00
 updated: 2026-10-07 13:46:00
 categories: [开发技术, 开源项目]
@@ -11,6 +11,8 @@ excerpt: 社区热议TypeScript-Go编译器项目，有开发者尝试用C#重�
 最近，一个名为"TypeScript-Go"的编译器项目在开发者社区引发了热议。
 
 这个项目的目标是用Go语言重新实现TypeScript编译器，而更有趣的是，有开发者开始尝试用C#来重写它。一场跨语言工具链的生态博弈，正在悄然展开。
+
+![社区热议TypeScript-Go编译器项目要点示意](/images/posts/avalonia-future-trend.png)
 
 ## TypeScript-Go：为什么要重写TypeScript编译器
 

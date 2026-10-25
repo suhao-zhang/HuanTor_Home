@@ -1,5 +1,5 @@
 ---
-title: Mock 不是万能替身：Dummy / Stub / Spy / Mock / Fake 五种 Test Double 的边界
+title: Mock 不是万能替身：Dummy / Stub / Spy / Mock / Fake 五种 Test Double 的边界｜洹拓科技
 date: 2026-10-24 19:33:00
 updated: 2026-10-24 19:33:00
 categories: [软件测试]

@@ -1,5 +1,5 @@
 ---
-title: 重试注解里的 exclude，含义和你想的正好相反
+title: 重试注解里的 exclude，含义和你想的正好相反｜洹拓科技
 date: 2026-10-13 14:35:00
 updated: 2026-10-13 14:35:00
 categories: [后端架构]

@@ -1,5 +1,5 @@
 ---
-title: 从漫剧 Agent 到出海短剧 Agent：AI 视频工具链该拆成四层看
+title: 从漫剧 Agent 到出海短剧 Agent：AI 视频工具链该拆成四层看｜洹拓科技
 date: 2026-10-23 15:26:00
 updated: 2026-10-23 15:26:00
 categories: [AI应用]

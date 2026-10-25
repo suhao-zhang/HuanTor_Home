@@ -1,5 +1,5 @@
 ---
-title: JDK 17 升级后单测集体报 InaccessibleObjectException：--add-opens 该怎么加才对
+title: JDK 17 升级后单测集体报 InaccessibleObjectException：--add-opens 该怎么加才对｜洹拓科技
 date: 2026-09-05 15:45:00
 updated: 2026-09-05 15:45:00
 categories: [开发工具]

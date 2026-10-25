@@ -8,6 +8,8 @@ cover: /images/posts/ai-agent-production-safety.png
 excerpt: AI Agent正在从实验室走向生产环境，但行为不可预测和执行能力带来全新安全挑战。洹拓科技结合阿里云ACS Agent Sandbox与LoongCollector方案，分享Agent生产化的工程经验。
 ---
 
+![智能体进生产的四道闸：权限、沙箱、可观测、回退，每道各留一份证据](/images/posts/ai-agent-production-safety.png)
+
 ## 一、AI Agent的两个本质特征
 
 随着大语言模型的快速发展，AI Agent正在成为软件开发领域最热门的方向之一。从智能客服到代码助手，从数据分析到自动化运维，Agent正在改变我们构建软件的方式。
@@ -18,8 +20,6 @@ excerpt: AI Agent正在从实验室走向生产环境，但行为不可预测和
 - **具备执行能力**：Agent不仅能"说"，还能"做"——访问数据、调用API、执行操作
 
 这两个特征带来了全新的挑战。洹拓科技在为新乡本地企业交付AI Agent项目时，对此有深刻体会。
-
-![AI Agent安全挑战](https://images.unsplash.com/photo-1684369175833-4b445ad6bfb5?w=800)
 
 ## 二、核心挑战一：运行时安全
 
@@ -35,8 +35,6 @@ Agent在运行时需要访问数据、调用工具、执行操作，如果没有
 
 Agent最大的威胁往往来自外部能力被滥用——异常外呼、SSRF/内网探测、敏感数据落盘或外传。
 
-![Agent运行时安全](https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=800)
-
 ## 三、核心挑战二：全链路可观测
 
 传统应用的行为是确定的，相同输入必然产生相同输出。但AI Agent不同——它的每一步决策都可能不同，这带来了三大可观测难题：
@@ -44,8 +42,6 @@ Agent最大的威胁往往来自外部能力被滥用——异常外呼、SSRF/�
 1. **行为难以复现和定位**：同一个问题，Agent今天可能调用工具A，明天可能调用工具B。当出现错误时，很难知道"在哪一步出了问题"。
 2. **成本难以控制和归因**：Agent的成本主要来自LLM Token消耗和外部API调用，且波动巨大。不知道哪些用户、哪些任务、哪些模型在"烧钱"。
 3. **质量难以度量和优化**：Agent的输出质量受模型能力、Prompt设计、检索数据等多种因素影响，且会不断变化。
-
-![Agent可观测挑战](https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800)
 
 ## 四、阿里云的解法：ACS Agent Sandbox + LoongCollector
 
@@ -63,8 +59,6 @@ Agent最大的威胁往往来自外部能力被滥用——异常外呼、SSRF/�
 - **一体化采集**：日志/指标/链路全覆盖，原生支持Prometheus和OpenTelemetry
 - **端侧计算**：在数据源头完成预处理，降低传输与存储成本
 - **企业级可靠性**：At-Least-Once投递语义，本地磁盘缓存，自动重试
-
-![深度集成方案](https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=800)
 
 ## 五、洹拓科技的Agent交付实践
 
@@ -91,8 +85,6 @@ Agent最大的威胁往往来自外部能力被滥用——异常外呼、SSRF/�
 - 第一阶段：内部试用，人工审核Agent的每一个输出
 - 第二阶段：小范围上线，设置人工接管机制
 - 第三阶段：全量上线，建立自动化监控和告警
-
-![完整方案架构](https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800)
 
 ## 六、给企业的建议
 

@@ -1,5 +1,5 @@
 ---
-title: Kubernetes API Server 认证机制深度解析
+title: Kubernetes API Server 认证机制深度解析｜洹拓科技
 date: 2026-08-25 09:00:00
 updated: 2026-08-25 09:00:00
 categories: [云原生安全]
@@ -11,6 +11,8 @@ excerpt: 四个字段决定所有权限判断——从 API Server 认证流程�
 在云原生架构中，Kubernetes 已成为容器编排的事实标准。但很多团队在部署完集群后，对 API Server 的认证授权机制理解不深，导致权限配置混乱甚至安全隐患。
 
 洹拓科技在为多家企业做云原生改造时，发现一个普遍现象：大家都在用 RBAC，但真正理解"为什么这么配"的人不多。今天我们就从 API Server 的认证流程讲起，把这套机制彻底拆开。
+
+![四个字段决定所有权限判断——从 API Serv要点示意](/images/posts/k8s-rbac-auth.png)
 
 ## API Server 请求的三道关卡
 

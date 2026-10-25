@@ -110,6 +110,7 @@ news:
   title: "技术与行业动态"
   subtitle: "我们对 AI 工程化落地的观察"
   count: 6
+  per_page: 12              # /news/ 列表每页条数（首页板块用 count，两者互不影响）
   more:
     name: "查看全部"
     url: "/news/"
@@ -180,11 +181,11 @@ footer:
         - { name: "robots.txt", url: "/robots.txt" }
         - { name: "llms.txt", url: "/llms.txt" }
   copyright: "© 2026 新乡洹拓科技有限公司 · 保留所有权利"
-  icp: ""                     # 备案下来后填，如 豫ICP备00000000号
+  icp: "豫ICP备2025140588号"   # 点开链接跳转工信部备案查询系统
   icp_url: "https://beian.miit.gov.cn/"
   police: ""
   police_url: ""
-  show_powered: true
+  show_powered: false        # 关掉主题作者的 XFM 外链与 Powered by 一行（主题自带开关，不必改主题文件）
 
 # 页脚社交/快捷图标。Hexo 的数组深合并只能改和追加、删不掉条目，
 # 所以这里按下标把主题自带的"作者邮箱 / Telegram / 作者博客"三个链接整体替换掉。

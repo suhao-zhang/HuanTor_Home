@@ -1,5 +1,5 @@
 ---
-title: 别追"零违规"：把 axe-core 挂进 Playwright 用基线门禁控住无障碍
+title: 别追"零违规"：把 axe-core 挂进 Playwright 用基线门禁控住无障碍｜洹拓科技
 date: 2026-10-01 15:57:00
 updated: 2026-10-01 15:57:00
 categories: [开发工具]

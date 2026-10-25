@@ -1,5 +1,5 @@
 ---
-title: Vitals监控工具评测：Mac系统监控的新一代解决方案
+title: Vitals监控工具评测：Mac系统监控的新一代解决方案｜洹拓科技
 date: 2026-10-04 09:18:00
 updated: 2026-10-04 09:18:00
 categories: [产品评测, 开发工具]
@@ -13,6 +13,8 @@ excerpt: Vitals是一款全新的Mac系统监控工具，提供实时CPU、内�
 开发者需要监控应用的CPU和内存占用，运维人员需要跟踪网络流量和服务器状态，普通用户也关心电池健康和系统温度。但macOS自带的活动监视器，功能虽然全面，界面却不够友好，更缺乏实时的可视化展示。
 
 Vitals的出现，填补了这一空白。
+
+![Vitals是一款全新的Mac系统监控工具要点示意](/images/posts/mac-vitals-monitoring.png)
 
 ## Vitals是什么：一目了然的系统状态
 

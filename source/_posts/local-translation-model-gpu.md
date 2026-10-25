@@ -1,5 +1,5 @@
 ---
-title: 翻译模型搬上显卡：要动的不止一行 device
+title: 翻译模型搬上显卡：要动的不止一行 device｜洹拓科技
 date: 2026-10-13 21:40:00
 updated: 2026-10-13 21:40:00
 categories: [AIGC]

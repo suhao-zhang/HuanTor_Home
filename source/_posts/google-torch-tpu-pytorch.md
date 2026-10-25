@@ -1,5 +1,5 @@
 ---
-title: Google开源TorchTPU：打破NVIDIA垄断的PyTorch加速方案深度解析
+title: Google开源TorchTPU：打破NVIDIA垄断的PyTorch加速方案深度解析｜洹拓科技
 date: 2026-09-28 11:29:00
 updated: 2026-09-28 11:29:00
 categories: [AI技术, 开源框架]
@@ -11,6 +11,8 @@ excerpt: Google正式开源TorchTPU，让PyTorch模型可以无缝运行在TPU�
 长期以来，PyTorch生态与NVIDIA CUDA形成了深度绑定。开发者习惯了用`model.cuda()`将模型放到GPU上运行，但这也意味着被锁定在NVIDIA的硬件生态中。
 
 Google开源的TorchTPU，正在改变这一格局。
+
+![Google正式开源TorchTPU要点示意](/images/posts/google-torchtpu-open-source.png)
 
 ## TorchTPU是什么：一行代码切换加速硬件
 

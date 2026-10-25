@@ -1,5 +1,5 @@
 ---
-title: 枚举中文描述别再靠反射：用 Roslyn 源生成器在编译期把 switch 生成好
+title: 枚举中文描述别再靠反射：用 Roslyn 源生成器在编译期把 switch 生成好｜洹拓科技
 date: 2026-10-24 19:39:00
 updated: 2026-10-24 19:39:00
 categories: [开发工具]

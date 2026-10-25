@@ -1,5 +1,5 @@
 ---
-title: 5B 参数的生图模型为什么值得本地部署：以 MOSS-Image 为例算一笔账
+title: 5B 参数的生图模型为什么值得本地部署：以 MOSS-Image 为例算一笔账｜洹拓科技
 date: 2026-10-24 17:56:00
 updated: 2026-10-24 17:56:00
 categories: [AI应用]

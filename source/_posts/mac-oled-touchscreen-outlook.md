@@ -1,5 +1,5 @@
 ---
-title: Mac OLED触屏前瞻：苹果笔记本的交互革命与开发者生态影响
+title: Mac OLED触屏前瞻：苹果笔记本的交互革命与开发者生态影响｜洹拓科技
 date: 2026-10-02 16:04:00
 updated: 2026-10-02 16:04:00
 categories: [产品评测, 行业动态]
@@ -11,6 +11,8 @@ excerpt: 苹果计划在MacBook产品线中引入OLED触屏，这将是笔记本
 据多方消息源确认，苹果正在积极测试OLED触屏MacBook，预计将在未来1-2年内正式发布。
 
 这将是Mac产品线自2015年引入Force Touch触控板以来，最大的一次交互升级。
+
+![苹果计划在MacBook产品线中引入OLED触屏要点示意](/images/posts/mac-oled-touchscreen.png)
 
 ## OLED触屏：为什么是现在
 

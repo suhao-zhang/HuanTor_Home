@@ -8,13 +8,13 @@ cover: /images/posts/qwen3-8-open-source-analysis.png
 excerpt: Qwen3.8预览版已上线，参数规模达2.4T，洹拓科技从AI模型研发服务商的视角，解读这轮大模型进化对中小企业数字化意味着什么。
 ---
 
+![开源权重落地要过的三关：自建算力、评测回归、许可与商用边界](/images/posts/qwen3-8-open-source-analysis.png)
+
 ## 一、Qwen3.8来了：以"天"为单位进化的大模型
 
 就在近日，阿里云千问团队发布了Qwen3.8预览版模型（Qwen3.8-Max），并宣布正式版即将发布并开源。根据阿里云开发者社区披露的信息，新模型参数规模达到2.4T（2.4万亿），被业内评价为"除了Fable 5外最强大的模型"。
 
 更值得关注的是进化节奏——千问团队的模型迭代速度已经以"天"为单位计算。预览版已首发上线阿里Token Plan、Qoder及QoderWork平台，白天credits消耗限时1折，夜间更低，个人版及团队版低至每月35元起。
-
-![Qwen3.8发布](https://images.unsplash.com/photo-1677442136019-21780ecad995?w=800)
 
 ## 二、洹拓视角：大模型开源对中小企业意味着什么
 

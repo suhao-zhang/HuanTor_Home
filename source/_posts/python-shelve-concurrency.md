@@ -1,5 +1,5 @@
 ---
-title: 顺手用 shelve 存状态，第二个进程打开就开始报 locked file
+title: 顺手用 shelve 存状态，第二个进程打开就开始报 locked file｜洹拓科技
 date: 2026-10-24 20:42:00
 updated: 2026-10-24 20:42:00
 categories: [技术实践]

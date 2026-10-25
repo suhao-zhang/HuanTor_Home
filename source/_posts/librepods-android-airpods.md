@@ -1,5 +1,5 @@
 ---
-title: LibrePods 开源项目解析：让 AirPods 在 Android 上全功能运行
+title: LibrePods 开源项目解析：让 AirPods 在 Android 上全功能运行｜洹拓科技
 date: 2026-09-23 12:33:00
 updated: 2026-09-23 12:33:00
 categories: [开发工具]
@@ -11,6 +11,8 @@ excerpt: 无需Root，让AirPods在Android设备上实现弹窗、电量显示�
 少数派最近推荐了一款开源应用 LibrePods，能让 AirPods 在 Android 设备上实现几乎全部功能：弹窗配对、电量显示、空间音频、自动切换。更重要的是，不需要 Root 权限。
 
 洹拓科技在为新乡企业做移动应用开发时，一直关注跨平台硬件兼容方案。今天从技术角度，拆解 LibrePods 的实现原理。
+
+![无需Root要点示意](/images/posts/librepods-android-airpods.png)
 
 ## AirPods 的"封闭生态"
 

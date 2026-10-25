@@ -1,5 +1,5 @@
 ---
-title: 想中途停一条 Promise 链：取消点、清理责任和 catch 的错觉
+title: 想中途停一条 Promise 链：取消点、清理责任和 catch 的错觉｜洹拓科技
 date: 2026-10-07 20:41:00
 updated: 2026-10-07 20:41:00
 categories: [前端工程]

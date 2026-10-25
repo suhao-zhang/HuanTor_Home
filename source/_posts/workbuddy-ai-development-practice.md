@@ -1,5 +1,5 @@
 ---
-title: WorkBuddy 实战：用 AI 开发助手三天做出 GitHub Star 大赛项目
+title: WorkBuddy 实战：用 AI 开发助手三天做出 GitHub Star 大赛项目｜洹拓科技
 date: 2026-09-09 12:27:00
 updated: 2026-09-09 12:27:00
 categories: [AI应用]
@@ -11,6 +11,8 @@ excerpt: 腾讯云开发者把 GitHub Star 大赛项目全程交给 AI 助手 Wo
 最近腾讯云开发者社区有篇文章引起了广泛讨论：一位开发者用 AI 助手 WorkBuddy，三天时间完成了一个 GitHub Star 大赛的参赛项目。从需求分析到代码实现，AI 全程参与。
 
 洹拓科技一直在关注 AI 辅助开发工具的落地效果。今天从这个真实案例出发，聊聊 AI 开发助手能做什么、不能做什么。
+
+![腾讯云开发者把 GitHub Star 大赛项目要点示意](/images/posts/workbuddy-ai-development.png)
 
 ## 案例回顾
 

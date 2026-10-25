@@ -1,5 +1,5 @@
 ---
-title: 从 Avalonia 3D 地球看跨平台 UI 框架的未来
+title: 从 Avalonia 3D 地球看跨平台 UI 框架的未来｜洹拓科技
 date: 2026-09-26 16:01:00
 updated: 2026-09-26 16:01:00
 categories: [开发工具]
@@ -11,6 +11,8 @@ excerpt: Avalonia 做出 3D 地球、AI 聊天、动画原理演示。洹拓科�
 博客园最近有篇文章很火：《一次发布改了 2000+ 个文件：Avalonia 原生做出 3D 地球、AI 聊天和会动的 AI 原理动画》。一位开发者用 Avalonia 框架，在一次版本更新中同时发布了三个炫酷应用。
 
 洹拓科技在为新乡企业做桌面工具开发时，一直在关注跨平台 UI 方案的演进。今天从这些案例出发，聊聊跨平台 UI 框架的未来趋势。
+
+![Avalonia 做出 3D 地球、AI 聊天、要点示意](/images/posts/avalonia-future-trend.png)
 
 ## Avalonia 的三个案例
 

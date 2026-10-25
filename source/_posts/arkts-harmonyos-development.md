@@ -1,5 +1,5 @@
 ---
-title: ArkTS 鸿蒙开发入门：从变量声明到应用上线
+title: ArkTS 鸿蒙开发入门：从变量声明到应用上线｜洹拓科技
 date: 2026-09-09 11:20:00
 updated: 2026-09-09 11:20:00
 categories: [开发工具]
@@ -11,6 +11,8 @@ excerpt: 鸿蒙原生应用开发绕不开 ArkTS。洹拓科技从零开始，�
 华为 HarmonyOS NEXT 彻底抛弃了 Android 兼容层，纯血鸿蒙时代到来。开发鸿蒙原生应用，绕不开一门新语言：ArkTS。
 
 洹拓科技在为新乡企业做移动端应用时，已经开始接触鸿蒙项目。今天从零开始，聊聊 ArkTS 的基本语法和开发体验。
+
+![鸿蒙原生应用开发绕不开 ArkTS要点示意](/images/posts/arkts-harmonyos-development.png)
 
 ## ArkTS 是什么
 

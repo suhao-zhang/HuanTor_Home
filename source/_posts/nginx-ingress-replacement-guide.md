@@ -1,5 +1,5 @@
 ---
-title: Nginx Ingress 退役在即：云原生网关选型避坑指南
+title: Nginx Ingress 退役在即：云原生网关选型避坑指南｜洹拓科技
 date: 2026-09-02 11:17:00
 updated: 2026-09-02 11:17:00
 categories: [云原生安全]
@@ -11,6 +11,8 @@ excerpt: Nginx Ingress Controller 宣布退役，Higress、Kong、APISIX 谁接�
 最近阿里云开发者社区一篇文章引起了广泛关注：Nginx Ingress 即将退役，云原生网关选型成为热门话题。很多团队在用 Kubernetes 时，默认就装了 Nginx Ingress Controller，从没想过它有一天会退役。
 
 洹拓科技在为新乡多家企业做云原生改造时，发现一个普遍现象：大家都在用 Nginx Ingress，但对 Ingress、Ingress Controller、Nginx Ingress 这几个概念的区别并不清楚。今天先把概念理清，再谈选型。
+
+![Nginx Ingress Controller要点示意](/images/posts/nginx-ingress-replacement.png)
 
 ## 先搞清这几个容易混淆的概念
 

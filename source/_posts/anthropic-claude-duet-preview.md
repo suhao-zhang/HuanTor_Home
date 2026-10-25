@@ -1,5 +1,5 @@
 ---
-title: Anthropic亮出更强更守规矩的未发布AI模型：Claude Duet多轮对话能力深度前瞻
+title: Anthropic亮出更强更守规矩的未发布AI模型：Claude Duet多轮对话能力深度前瞻｜洹拓科技
 date: 2026-10-01 14:50:00
 updated: 2026-10-01 14:50:00
 categories: [AI技术, 产品评测]
@@ -11,6 +11,8 @@ excerpt: Anthropic预告了新一代AI模型Claude Duet，主打更强的多轮�
 在AI大模型竞争白热化的当下，Anthropic选择了一条不同的路：不追求最大的参数量，而是专注于打造"更安全、更可靠"的AI。
 
 最新预告的Claude Duet模型，正是这一理念的集中体现。
+
+![Anthropic预告了新一代AI模型Claud要点示意](/images/posts/anthropic-claude-duet.png)
 
 ## Claude Duet的核心突破：多轮对话的质变
 

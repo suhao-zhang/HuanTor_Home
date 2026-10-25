@@ -1,5 +1,5 @@
 ---
-title: iOS 崩溃排查不再靠猜：基于 KSCrash 的分层捕获指南
+title: iOS 崩溃排查不再靠猜：基于 KSCrash 的分层捕获指南｜洹拓科技
 date: 2026-09-13 17:02:00
 updated: 2026-09-13 17:02:00
 categories: [开发工具]
@@ -13,6 +13,8 @@ excerpt: 从Mach异常到NSException，从堆栈遍历到僵尸检测。洹拓�
 这是很多移动端开发团队的日常。洹拓科技在为新乡企业做移动应用开发时，发现一个普遍现象：大家都在用 Crashlytics 或 Bugly，但对崩溃捕获的底层原理理解不深，导致很多问题"靠猜"。
 
 今天从技术角度，拆解 iOS 崩溃捕获的分层方案。
+
+![从Mach异常到NSException要点示意](/images/posts/ios-crash-capture.png)
 
 ## iOS 崩溃的三层结构
 

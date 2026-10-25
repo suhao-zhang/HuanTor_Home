@@ -202,3 +202,21 @@ hexo.extend.filter.register('after_render:html', function (str, data) {
   return out;
 });
 
+
+/* ------------------------------------------------------------------
+ * 7) 品牌去重：文章标题本身已带「洹拓科技」时，去掉 head.ejs 追加的站点名后缀，
+ *    否则 <title> 会变成「……｜洹拓科技 | 新乡洹拓科技有限公司」，品牌出现两次。
+ *    单独注册一个 after_render:html，排在上面主处理之后，只动 title 与 og/twitter 标题。
+ * ------------------------------------------------------------------ */
+hexo.extend.filter.register('after_render:html', function (str) {
+  const SUFFIX = ' | 新乡洹拓科技有限公司';
+  if (str.indexOf(SUFFIX) === -1) return str;
+  const head = (str.match(/<title>([\s\S]*?)<\/title>/) || [])[1];
+  if (!head || head.length <= SUFFIX.length) return str;
+  const bare = head.slice(0, head.length - SUFFIX.length);
+  if (!/｜洹拓科技$/.test(bare)) return str;   // 只处理我们统一加的后缀模式，其余页面保留站点名后缀
+  str = str.replace(/<title>[\s\S]*?<\/title>/, '<title>' + bare + '</title>');
+  str = str.replace(/(<meta property="og:title" content=")[^"]*(")/, '$1' + bare + '$2');
+  str = str.replace(/(<meta name="twitter:title" content=")[^"]*(")/, '$1' + bare + '$2');
+  return str;
+});

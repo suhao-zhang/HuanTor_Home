@@ -1,5 +1,5 @@
 ---
-title: Oracle LogMiner 数据挖掘实战：从归档日志里找回丢失的数据
+title: Oracle LogMiner 数据挖掘实战：从归档日志里找回丢失的数据｜洹拓科技
 date: 2026-10-21 15:03:00
 updated: 2026-10-21 15:03:00
 categories: [后端架构]
@@ -13,6 +13,8 @@ excerpt: 误删数据、审计追踪、数据同步——Oracle LogMiner 的三�
 这是 DBA 最怕听到的两句话。洹拓科技在为新乡多家企业做数据库运维时，发现一个普遍现象：很多团队用 Oracle 多年，但从没用过 LogMiner。直到出了事，才知道这个工具能救命。
 
 今天从实战角度，聊聊 Oracle LogMiner 的三个核心场景。
+
+![误删数据、审计追踪、数据同步——Oracle L要点示意](/images/posts/oracle-logminer-practice.png)
 
 ## LogMiner 是什么
 

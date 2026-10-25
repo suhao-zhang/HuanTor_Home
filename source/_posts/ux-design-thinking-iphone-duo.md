@@ -1,5 +1,5 @@
 ---
-title: 产品设计中的用户体验思维：从 iPhone Duo 说起
+title: 产品设计中的用户体验思维：从 iPhone Duo 说起｜洹拓科技
 date: 2026-08-30 16:49:00
 updated: 2026-08-30 16:49:00
 categories: [产品设计]
@@ -11,6 +11,8 @@ excerpt: 苹果iPhone Duo的设计取舍背后，是"破与立"的产品哲学�
 最近少数派有一篇关于 iPhone Duo 的设计复盘文章，洹拓科技的设计团队读完后很有启发。文章提到一个观点：好的产品设计不是堆功能，而是在"破"与"立"之间找到平衡。
 
 这个观点放在软件产品里同样适用。今天我们就从 iPhone Duo 的设计取舍聊起，谈谈软件产品如何借鉴硬件设计思维。
+
+![苹果iPhone Duo的设计取舍背后要点示意](/images/posts/ux-design-thinking.png)
 
 ## iPhone Duo 的设计取舍
 

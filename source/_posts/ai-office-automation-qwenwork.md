@@ -1,5 +1,5 @@
 ---
-title: AI办公自动化：拓科技解读千问办公QwenWork的企业应用
+title: AI办公自动化：拓科技解读千问办公QwenWork的企业应用｜洹拓科技
 date: 2026-10-13 13:49:00
 updated: 2026-10-13 13:49:00
 categories: [AI应用]

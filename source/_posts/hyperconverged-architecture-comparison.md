@@ -1,5 +1,5 @@
 ---
-title: 超融合架构深度对比：Nutanix vs VMware vSAN vs Ceph
+title: 超融合架构深度对比：Nutanix vs VMware vSAN vs Ceph｜洹拓科技
 date: 2026-09-25 15:54:00
 updated: 2026-09-25 15:54:00
 categories: [云服务]
@@ -11,6 +11,8 @@ excerpt: 超融合市场三大方案深度对比。洹拓科技从架构、性�
 上一篇文章洹拓科技分享了 Nutanix 超融合的部署实战，很多读者留言问：Nutanix、VMware vSAN、Ceph 这三个方案到底怎么选？
 
 今天我们从架构原理、性能表现、成本投入、运维难度四个维度，做一次深度对比，帮你选对方案。
+
+![超融合市场三大方案深度对比要点示意](/images/posts/hyperconverged-architecture-comparison.png)
 
 ## 架构对比
 

@@ -1,5 +1,5 @@
 ---
-title: 把Muse装进ESP-Mosaico：拓科技谈Vibe Coding的硬件实践
+title: 把Muse装进ESP-Mosaico：拓科技谈Vibe Coding的硬件实践｜洹拓科技
 date: 2026-10-12 11:35:00
 updated: 2026-10-12 11:35:00
 categories: [开发工具]

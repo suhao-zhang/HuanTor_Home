@@ -1,5 +1,5 @@
 ---
-title: LaTeX 公式搬进 Word 和 WPS：转换过程中真正丢的是什么
+title: LaTeX 公式搬进 Word 和 WPS：转换过程中真正丢的是什么｜洹拓科技
 date: 2026-10-05 14:57:00
 updated: 2026-10-05 14:57:00
 categories: [开发工具]

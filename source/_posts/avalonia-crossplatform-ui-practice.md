@@ -1,5 +1,5 @@
 ---
-title: Avalonia 跨平台 UI 框架实战：从 3D 地球项目说起
+title: Avalonia 跨平台 UI 框架实战：从 3D 地球项目说起｜洹拓科技
 date: 2026-09-07 09:06:00
 updated: 2026-09-07 09:06:00
 categories: [开发工具]
@@ -11,6 +11,8 @@ excerpt: 博客园开发者用 Avalonia 做出炫酷 3D 地球。洹拓科技聊
 最近博客园有个项目火了：一位开发者用 Avalonia 框架做了一个 3D 地球应用，支持旋转、缩放、标注，效果堪比专业 GIS 软件。很多人第一次听说 Avalonia：原来 .NET 也能做跨平台桌面应用了？
 
 洹拓科技在为新乡企业做桌面工具开发时，也一直在关注跨平台 UI 方案。今天从技术角度，聊聊 Avalonia 的实战体验。
+
+![博客园开发者用 Avalonia 做出炫酷 3D要点示意](/images/posts/avalonia-crossplatform-ui.png)
 
 ## 什么是 Avalonia
 

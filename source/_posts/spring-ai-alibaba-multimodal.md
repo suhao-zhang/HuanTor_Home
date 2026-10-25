@@ -8,6 +8,8 @@ cover: /images/posts/spring-ai-alibaba-multimodal.png
 excerpt: Spring AI Alibaba近期更新了文生图、文生音及向量化能力。洹拓科技Java技术团队第一时间进行了实践验证，分享多模态AI在企业级Java项目中的集成经验。
 ---
 
+![Spring AI Alibaba近期更新了文生要点示意](/images/posts/spring-ai-alibaba-multimodal.png)
+
 ## 一、Spring AI Alibaba：Java生态的AI集成框架
 
 对于Java开发者来说，Spring生态是绕不开的技术栈。Spring AI Alibaba作为Spring AI的阿里云实现，让Java开发者可以用熟悉的Spring Boot方式集成大模型能力。

@@ -1,5 +1,5 @@
 ---
-title: 用 Redis Stream 顶消息队列：先补上清理、再平衡与积压口径
+title: 用 Redis Stream 顶消息队列：先补上清理、再平衡与积压口径｜洹拓科技
 date: 2026-10-18 10:48:00
 updated: 2026-10-18 10:48:00
 categories: [后端架构]

@@ -1,5 +1,5 @@
 ---
-title: Windows 10 LTSB 企业更新管理：如何彻底关闭自动更新
+title: Windows 10 LTSB 企业更新管理：如何彻底关闭自动更新｜洹拓科技
 date: 2026-09-22 11:26:00
 updated: 2026-09-22 11:26:00
 categories: [安全运维]
@@ -11,6 +11,8 @@ excerpt: Windows 10 LTSB/LTSC是企业稳定之选，但自动更新常常"帮�
 博客园最近有篇文章火了：《实战｜Windows 10 2016 LTSB 彻底永久关闭自动更新》。很多 IT 运维人员纷纷点赞，因为 Windows 自动更新确实是企业 IT 管理的一大痛点。
 
 洹拓科技在为新乡多家企业做 IT 运维托管时，发现一个普遍现象：大家都在用 Windows 10 LTSB/LTSC，但自动更新经常"帮倒忙"——要么半夜重启电脑，要么更新后软件不兼容。今天把彻底管控更新的方法分享出来。
+
+![Windows 10 LTSB/LTSC是企业稳要点示意](/images/posts/windows-ltsb-update-management.png)
 
 ## 什么是 LTSB/LTSC
 
