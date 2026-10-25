@@ -309,6 +309,16 @@ article.page > .page-content { padding-top: 64px; }
   .ht-org__root::after { display: none; }
 }
 
+/* ---------- 语言切换按钮（scripts/lang-en.js 注入到 header 右侧） ---------- */
+.ht-lang-switch {
+  display: inline-flex; align-items: center; justify-content: center;
+  min-width: 38px; height: 38px; padding: 0 10px; border-radius: 10px;
+  border: 1px solid var(--border); background: transparent;
+  color: var(--text-secondary); font-size: 13px; font-weight: 600; letter-spacing: .02em;
+  transition: border-color .2s ease, color .2s ease, background .2s ease;
+}
+.ht-lang-switch:hover { border-color: var(--primary); color: var(--primary); background: var(--primary-soft); }
+
 /* ---------- 404 页（source/404.md） ---------- */
 .ht-404 { text-align: center; padding-top: 6px; }
 .ht-404__num {

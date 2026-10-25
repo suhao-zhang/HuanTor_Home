@@ -8,7 +8,9 @@ subtitle: 'AI 大模型研发 · 工业智能 · SaaS 与云服务'
 description: '新乡洹拓科技有限公司：AI 大模型应用研发、工业 AI 与视觉检测、软件与 SaaS 系统开发、云服务部署运维、GEO 生成式引擎优化。'
 keywords: 新乡洹拓科技,AI大模型应用,工业AI应用,新乡软件开发,SaaS开发,GEO优化
 author: 新乡洹拓科技有限公司
-language: zh-CN
+language:
+  - zh-CN
+  - en
 timezone: 'Asia/Shanghai'
 
 # URL

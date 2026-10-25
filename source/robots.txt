@@ -35,3 +35,7 @@ User-agent: Baiduspider-render
 Allow: /
 
 Sitemap: https://www.huant.ltd/sitemap.xml
+
+# 机器可读摘要（供 AI 系统直接取用，不是抓取指令）
+#   中文：https://www.huant.ltd/llms.txt
+#   English: https://www.huant.ltd/llms-en.txt
