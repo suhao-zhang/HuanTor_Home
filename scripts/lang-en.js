@@ -79,7 +79,13 @@ const HEADER_MAP = {
   '组织架构': 'Organisation',
   '发展历程': 'History',
   '加入我们': 'Careers',
-  '联系我们': 'Contact'
+  '联系我们': 'Contact',
+  // 产品服务下的二级菜单。OneGeo 与伴岛星云是产品名，不译；
+  // 它们指向的仍是中文产品页（没有英文版），与 News / Tech Stack 一个处理方式
+  '全部产品与方案': 'All Products',
+  '企业知识库与问答': 'Knowledge Base & Q&A',
+  '工业视觉与设备数据': 'Industrial Vision',
+  'SaaS 与 GEO 方案': 'SaaS & GEO'
 };
 
 const FOOTER_MAP = {

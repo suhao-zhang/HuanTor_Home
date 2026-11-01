@@ -124,9 +124,18 @@ article.page > .page-content { padding-top: 64px; }
 }
 .ht-mode:hover { transform: translateY(-4px); box-shadow: var(--shadow-md); }
 .ht-mode h3 { margin: 0 0 10px; font-size: 17px; }
+.ht-mode h3 a { color: var(--text); }
+.ht-mode h3 a:hover { color: var(--primary); }
 .ht-mode p { margin: 0 0 12px; font-size: 14.5px; color: var(--muted); }
 .ht-mode ul { margin: 0; padding-left: 18px; font-size: 14px; color: var(--text-secondary); }
 .ht-mode ul li { margin-bottom: 5px; }
+/* 两列版（产品卡用），以及卡内"查看详情"那一行 */
+.ht-modes--2 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.ht-mode__go { margin: 14px 0 0 !important; }
+.ht-mode__go a { display: inline-flex; align-items: center; gap: 5px; font-size: 14px; font-weight: 600; color: var(--primary); }
+.ht-mode__go a::after { content: "→"; transition: transform .2s ease; }
+.ht-mode__go a:hover::after { transform: translateX(4px); }
+@media (max-width: 860px) { .ht-modes--2 { grid-template-columns: 1fr; } }
 
 /* ---------- FAQ 折叠 ---------- */
 .ht-faq { max-width: 860px; margin: 0 auto; }

@@ -1,7 +1,7 @@
 ---
 title: 产品服务
 subtitle: 从模型到系统，从上线到运营
-description: "新乡洹拓科技的产品与服务：AI 大模型应用研发、AI 工业应用与视觉检测、软件开发、云服务、SaaS 产品与运营、GEO 生成式引擎优化六个方向，以及企业知识库与智能问答、工业视觉与设备数据平台、SaaS 与 GEO 三条产品主线的具体交付物与验收方式。"
+description: "新乡洹拓科技的产品与服务：两款自研产品 OneGeo（AI 搜索可见性监测与优化）与伴岛星云（微信服务号加小程序的同城找搭子社交产品），以及企业知识库与智能问答、工业视觉与设备数据平台、SaaS 与 GEO 三条方案主线，每个方向都写清交付物与验收方式。"
 date: 2026-10-24 08:50:00
 ---
 
@@ -22,6 +22,34 @@ date: 2026-10-24 08:50:00
   </div>
   <div class="about__media ht-media">
     <img src="../images/hero.svg" alt="产品与方案" loading="lazy">
+  </div>
+</div>
+
+<div class="section-head" style="margin-top: 72px;">
+  <h2>自研产品</h2>
+  <p>我们自己开发并在运营的两款产品，可以直接用，也承接按你的场景改</p>
+</div>
+
+<div class="ht-modes ht-stagger ht-modes--2">
+  <div class="ht-mode">
+    <h3><a href="onegeo/">OneGeo</a></h3>
+    <p>GEO 生成式引擎优化平台。让品牌在 AI 搜索与大模型回答里被检索到、被正确描述、被引用。</p>
+    <ul>
+      <li>实体一致性、内容结构化、抓取可达性、信源布局、持续监测</li>
+      <li>看三个数：被引用次数、描述准确率、来源分布</li>
+      <li>产品站 onegeo.cn，也可由我们代做</li>
+    </ul>
+    <p class="ht-mode__go"><a href="onegeo/">看 OneGeo 详情</a></p>
+  </div>
+  <div class="ht-mode">
+    <h3><a href="bandao-xingyun/">伴岛星云</a></h3>
+    <p>同城找搭子社交产品，微信服务号加小程序。发帖约人、报名、同意后绑定关系、再私信沟通。</p>
+    <ul>
+      <li>八类搭子场景，可按"离我最近"筛</li>
+      <li>UGC 入库前送审，私信只对已绑定双方开放</li>
+      <li>uni-app + Spring Boot + MySQL + Redis，一套代码出四端</li>
+    </ul>
+    <p class="ht-mode__go"><a href="bandao-xingyun/">看伴岛星云详情</a></p>
   </div>
 </div>
 

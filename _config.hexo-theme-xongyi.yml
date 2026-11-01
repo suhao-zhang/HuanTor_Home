@@ -34,7 +34,15 @@ menu:
       - { name: "发展历程", url: "/about/history/" }
       - { name: "加入我们", url: "/about/careers/" }
       - { name: "联系我们", url: "/contact/" }
-  - { name: "产品服务", url: "/products/" }
+  - name: "产品服务"
+    url: "/products/"
+    children:
+      - { name: "全部产品与方案", url: "/products/" }
+      - { name: "OneGeo", url: "/products/onegeo/" }
+      - { name: "伴岛星云", url: "/products/bandao-xingyun/" }
+      - { name: "企业知识库与问答", url: "/solutions/enterprise-knowledge-base/" }
+      - { name: "工业视觉与设备数据", url: "/solutions/industrial-vision-platform/" }
+      - { name: "SaaS 与 GEO 方案", url: "/solutions/saas-and-geo/" }
   - { name: "新闻动态", url: "/news/" }
   - { name: "技术栈", url: "/tech/" }
 
